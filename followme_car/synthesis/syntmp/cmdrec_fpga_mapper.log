@@ -1,0 +1,16 @@
+C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\bin64\m_proasic.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis  -part A2F200M3F  -package FBGA484  -grade -1   -globalthreshold 50 -maxfan 24 -opcond COMWC     -report_path 0   -RWCheckOnRam 0     -summaryfile C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\synlog\report\followme_car_fpga_mapper.xml -top_level_module  followme_car  -flow mapping  -mp 1 -prjfile  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\scratchproject.prs  -implementation synthesis -licensetype  synplifypro  -oedif  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.edn  -freq 100.000  -tcl  C:\Users\owenyang\Desktop\FollowMe\followme_car\component\work\followme_car_MSS\mss_tshell_syn.sdc  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\synwork\followme_car_prem.srd  -sap  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.sap  -otap  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.tap  -omap  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.map  -devicelib  C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\lib\proasic\smartfusion.v  -sap  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.sap  -ologparam  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\syntmp\followme_car.plg  -osyn  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.srm  -prjdir  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\  -prjname  followme_car_syn  -log  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\synlog\followme_car_fpga_mapper.srr 
+rc:1 success:1
+C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\scratchproject.prs|o|1427318538|2931
+C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.edn|o|1427322297|1083817
+C:\Users\owenyang\Desktop\FollowMe\followme_car\component\work\followme_car_MSS\mss_tshell_syn.sdc|i|1427313935|204
+C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\synwork\followme_car_prem.srd|i|1427322260|49122
+C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.sap|o|1427322260|3554
+C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.tap|o|0|0
+C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.map|o|1427322298|28
+C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\lib\proasic\smartfusion.v|i|1389708296|72817
+C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.sap|o|1427322260|3554
+C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\syntmp\followme_car.plg|o|1427322298|1674
+C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.srm|o|1427322297|210001
+C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\synlog\followme_car_fpga_mapper.srr|o|1427322298|206798
+C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\bin64\m_proasic.exe|i|1401309616|14819328
+C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\bin\m_proasic.exe|i|1401306976|12178944

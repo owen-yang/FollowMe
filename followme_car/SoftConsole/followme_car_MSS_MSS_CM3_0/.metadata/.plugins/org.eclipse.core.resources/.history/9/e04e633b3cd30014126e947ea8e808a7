@@ -1,0 +1,19 @@
+#include "bool.h"
+
+#include "car.h"
+
+int main()
+{
+	initCar();
+
+	int count = 0;
+	int cycle = 0;
+	while( 1 )
+	{
+		if (count++ >= 4000000) {
+			cycle++;
+			count = 0;
+		}
+		moveCar(fwd, !fwd, 30, 30);
+	}
+}

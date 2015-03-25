@@ -1,0 +1,5 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+@N: MF236 :"c:\users\owenyang\desktop\followme\followme_car\hdl\motor_controller.v":97:42:97:46|Generating a type div divider 
+@N: MF236 :"c:\users\owenyang\desktop\followme\followme_car\hdl\motor_controller.v":97:42:97:46|Generating a type div divider 
+@N: BN225 |Writing default property annotation file C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.sap.

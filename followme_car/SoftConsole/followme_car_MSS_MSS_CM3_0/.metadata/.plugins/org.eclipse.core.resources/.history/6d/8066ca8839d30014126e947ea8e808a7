@@ -1,0 +1,27 @@
+#ifndef CAR_H_
+#define CAR_H_
+
+#include "bool.h"
+
+#define MOTOR_CONTROLLER_ADDR 0x40050000
+
+/**
+ * @param	leftFwd		Whether the left side should move forward
+ * @param	rightFwd	Whether the right side should move forward
+ * @param	leftSpeed	Speed of the left side given as a percentage
+ * @param	rightSpeed	Speed of the right side given as a percentage
+ */
+void moveCar(bool leftFwd, bool rightFwd, int leftSpeed, int rightSpeed) {
+	uint32_t *addr = (uint32_t*)MOTOR_CONTROLLER_ADDR;
+	uint32_t data = 0;
+
+	data ^= rightFwd;
+	data ^= leftFwd << 1;
+
+	data ^= 90 << 2;
+	data ^= 90 << 9;
+
+	*addr = data;
+}
+
+#endif /* CAR_H_ */

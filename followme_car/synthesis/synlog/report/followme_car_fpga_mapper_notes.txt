@@ -1,0 +1,34 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF238 :"c:\users\owenyang\desktop\followme\followme_car\hdl\motor_controller.v":95:17:95:26|Found 20-bit incrementor, 'un3_count_1[19:0]'
+@N: MF179 :"c:\users\owenyang\desktop\followme\followme_car\hdl\motor_controller.v":97:8:97:46|Found 28 bit by 28 bit '<' comparator, 'PWM_OUT6'
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MF176 |Default generator successful 
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.

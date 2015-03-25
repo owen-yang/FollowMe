@@ -1,0 +1,33 @@
+#ifndef CAR_H_
+#define CAR_H_
+
+#include <inttypes.h>
+#include "bool.h"
+
+#define MOTOR_CONTROLLER_ADDR 0x40050000
+
+static const int DUTY_RANGE = 60;
+static const int DUTY_MIN = 30;
+
+/**
+ * Initializes the car to default speeds (stopped).
+ */
+void initCar();
+
+/**
+ * Stops the car.
+ */
+void stopCar();
+
+/**
+ * Moves the car with specified directions and speeds. Speeds are given
+ * as percentage of max speed. Speed of 0 implies stopping the car.
+ *
+ * @param	leftFwd		Whether the left side should move forward
+ * @param	rightFwd	Whether the right side should move forward
+ * @param	leftSpeed	Speed of the left side given as a percentage
+ * @param	rightSpeed	Speed of the right side given as a percentage
+ */
+void moveCar(bool leftFwd, bool rightFwd, int leftSpeed, int rightSpeed);
+
+#endif /* CAR_H_ */

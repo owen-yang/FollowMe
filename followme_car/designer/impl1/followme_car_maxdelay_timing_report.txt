@@ -1,0 +1,1075 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version v11.4
+Microsemi Corporation - Microsemi Libero Software Release v11.4 (Version 11.4.0.112)
+Date: Wed Mar 25 18:26:21 2015
+
+
+Design: followme_car
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+Temperature: COM
+Voltage: COM
+Speed Grade: -1
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Condition: BEST
+Max Operating Condition: WORST
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               mss_aclk
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_fabric_interface_clock
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_pclk1
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_ccc_gla1
+Period (ns):                65.576
+Frequency (MHz):            15.249
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      5.615
+Max Clock-To-Out (ns):      11.228
+
+Clock Domain:               mss_ccc_gla0
+Period (ns):                10.000
+Frequency (MHz):            100.000
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        -4.499
+External Hold (ns):         3.696
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               followme_car_MSS_0/MSS_CCC_0/I_RCOSC:CLKOUT
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+                            Input to Output
+Min Delay (ns):             N/A
+Max Delay (ns):             N/A
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain mss_aclk
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_fabric_interface_clock
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_pclk1
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_ccc_gla1
+
+SET Register to Register
+
+Path 1
+  From:                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE[2]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_left/PWM_OUT:D
+  Delay (ns):                  65.165
+  Slack (ns):                  -55.576
+  Arrival (ns):                70.310
+  Required (ns):               14.734
+  Setup (ns):                  0.409
+  Minimum Period (ns):         65.576
+
+Path 2
+  From:                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE[3]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_left/PWM_OUT:D
+  Delay (ns):                  65.084
+  Slack (ns):                  -55.495
+  Arrival (ns):                70.229
+  Required (ns):               14.734
+  Setup (ns):                  0.409
+  Minimum Period (ns):         65.495
+
+Path 3
+  From:                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE[0]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_left/PWM_OUT:D
+  Delay (ns):                  64.914
+  Slack (ns):                  -55.325
+  Arrival (ns):                70.059
+  Required (ns):               14.734
+  Setup (ns):                  0.409
+  Minimum Period (ns):         65.325
+
+Path 4
+  From:                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE[1]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_left/PWM_OUT:D
+  Delay (ns):                  64.771
+  Slack (ns):                  -55.161
+  Arrival (ns):                69.895
+  Required (ns):               14.734
+  Setup (ns):                  0.409
+  Minimum Period (ns):         65.161
+
+Path 5
+  From:                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE[6]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_left/PWM_OUT:D
+  Delay (ns):                  64.615
+  Slack (ns):                  -55.026
+  Arrival (ns):                69.760
+  Required (ns):               14.734
+  Setup (ns):                  0.409
+  Minimum Period (ns):         65.026
+
+
+Expanded Path 1
+  From: MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE[2]:CLK
+  To: MOTOR_CONTROLLER_0/pwm_left/PWM_OUT:D
+  data required time                             14.734
+  data arrival time                          -   70.310
+  slack                                          -55.576
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  4.630
+               +     0.000          net: followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  4.630                        followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  4.630                        followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.515          net: FAB_CLK
+  5.145                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE[2]:CLK (r)
+               +     0.559          cell: ADLIB:DFN1
+  5.704                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE[2]:Q (f)
+               +     1.551          net: MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE[2]
+  7.255                        MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_0_26_ADD_18x18_fast_I82_Y_a0_1:B (f)
+               +     0.370          cell: ADLIB:NOR2A
+  7.625                        MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_0_26_ADD_18x18_fast_I82_Y_a0_1:Y (r)
+               +     0.753          net: MOTOR_CONTROLLER_0/pwm_left/N_136
+  8.378                        MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_0_26_ADD_18x18_fast_I8_P0N:C (r)
+               +     0.345          cell: ADLIB:XO1A
+  8.723                        MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_0_26_ADD_18x18_fast_I8_P0N:Y (r)
+               +     0.280          net: MOTOR_CONTROLLER_0/pwm_left/N263
+  9.003                        MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_0_26_ADD_18x18_fast_I27_Y:C (r)
+               +     0.398          cell: ADLIB:OA1A
+  9.401                        MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_0_26_ADD_18x18_fast_I27_Y:Y (r)
+               +     0.988          net: MOTOR_CONTROLLER_0/pwm_left/N296
+  10.389                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_0_26_ADD_18x18_fast_I58_Y:B (r)
+               +     0.430          cell: ADLIB:AO1
+  10.819                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_0_26_ADD_18x18_fast_I58_Y:Y (r)
+               +     1.232          net: MOTOR_CONTROLLER_0/pwm_left/N334
+  12.051                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_0_26_ADD_18x18_fast_I150_Y:A (r)
+               +     0.759          cell: ADLIB:AX1D
+  12.810                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_0_26_ADD_18x18_fast_I150_Y:Y (f)
+               +     1.430          net: MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE[15]
+  14.240                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un61_sum_ADD_9x9_fast_I35_Y_0_0:B (f)
+               +     0.746          cell: ADLIB:AOI1
+  14.986                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un61_sum_ADD_9x9_fast_I35_Y_0_0:Y (r)
+               +     0.245          net: MOTOR_CONTROLLER_0/pwm_left/ADD_9x9_fast_I35_Y_0_0_0
+  15.231                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un61_sum_ADD_9x9_fast_I35_Y_0_2:C (r)
+               +     0.302          cell: ADLIB:OA1A
+  15.533                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un61_sum_ADD_9x9_fast_I35_Y_0_2:Y (r)
+               +     0.782          net: MOTOR_CONTROLLER_0/pwm_left/ADD_9x9_fast_I35_Y_0_2
+  16.315                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un61_sum_ADD_9x9_fast_I35_Y_0:A (r)
+               +     0.370          cell: ADLIB:OR2B
+  16.685                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un61_sum_ADD_9x9_fast_I35_Y_0:Y (f)
+               +     1.220          net: MOTOR_CONTROLLER_0/pwm_left/ADD_9x9_fast_I35_Y_0_0
+  17.905                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un68_sum_ADD_9x9_fast_I1_P0N:B (f)
+               +     0.490          cell: ADLIB:OR2A
+  18.395                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un68_sum_ADD_9x9_fast_I1_P0N:Y (f)
+               +     0.245          net: MOTOR_CONTROLLER_0/pwm_left/N130
+  18.640                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un68_sum_ADD_9x9_fast_I22_un1_Y:A (f)
+               +     0.273          cell: ADLIB:NOR3C
+  18.913                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un68_sum_ADD_9x9_fast_I22_un1_Y:Y (f)
+               +     0.247          net: MOTOR_CONTROLLER_0/pwm_left/I22_un1_Y
+  19.160                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un68_sum_ADD_9x9_fast_I33_Y:A (f)
+               +     0.571          cell: ADLIB:AX1D
+  19.731                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un68_sum_ADD_9x9_fast_I33_Y:Y (r)
+               +     0.840          net: MOTOR_CONTROLLER_0/pwm_left/mult1_un68_sum[5]
+  20.571                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un82_sum_ADD_9x9_fast_I11_un1_Y_a3_2:B (r)
+               +     0.448          cell: ADLIB:NOR2B
+  21.019                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un82_sum_ADD_9x9_fast_I11_un1_Y_a3_2:Y (r)
+               +     0.259          net: MOTOR_CONTROLLER_0/pwm_left/ADD_9x9_fast_I11_un1_Y_a3_2
+  21.278                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un82_sum_ADD_9x9_fast_I11_un1_Y_2_0:A (r)
+               +     0.708          cell: ADLIB:OA1
+  21.986                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un82_sum_ADD_9x9_fast_I11_un1_Y_2_0:Y (r)
+               +     0.255          net: MOTOR_CONTROLLER_0/pwm_left/ADD_9x9_fast_I11_un1_Y_2_0_3
+  22.241                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un82_sum_ADD_9x9_fast_I11_Y_2:B (r)
+               +     0.746          cell: ADLIB:OA1B
+  22.987                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un82_sum_ADD_9x9_fast_I11_Y_2:Y (r)
+               +     0.255          net: MOTOR_CONTROLLER_0/pwm_left/ADD_9x9_fast_I11_Y_2_4
+  23.242                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un82_sum_ADD_9x9_fast_I11_Y_4:C (r)
+               +     0.518          cell: ADLIB:OR3
+  23.760                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un82_sum_ADD_9x9_fast_I11_Y_4:Y (r)
+               +     1.007          net: MOTOR_CONTROLLER_0/pwm_left/ADD_9x9_fast_I11_Y_4_3
+  24.767                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un82_sum_ADD_9x9_fast_I11_Y:C (r)
+               +     0.583          cell: ADLIB:AO1A
+  25.350                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un82_sum_ADD_9x9_fast_I11_Y:Y (r)
+               +     0.967          net: MOTOR_CONTROLLER_0/pwm_left/N150_3
+  26.317                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un82_sum_ADD_m2_e_0:B (r)
+               +     0.460          cell: ADLIB:AOI1B
+  26.777                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un82_sum_ADD_m2_e_0:Y (f)
+               +     0.750          net: MOTOR_CONTROLLER_0/pwm_left/ADD_m2_e_0_1
+  27.527                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un82_sum_ADD_m2_e:A (f)
+               +     0.353          cell: ADLIB:OR2A
+  27.880                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un82_sum_ADD_m2_e:Y (r)
+               +     1.026          net: MOTOR_CONTROLLER_0/pwm_left/ADD_N_5_mux_1
+  28.906                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un89_sum_ADD_9x9_fast_I11_Y:A (r)
+               +     0.352          cell: ADLIB:AO1A
+  29.258                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un89_sum_ADD_9x9_fast_I11_Y:Y (f)
+               +     0.302          net: MOTOR_CONTROLLER_0/pwm_left/N150_2
+  29.560                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un89_sum_ADD_m2_e_0:B (f)
+               +     0.691          cell: ADLIB:AOI1B
+  30.251                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un89_sum_ADD_m2_e_0:Y (r)
+               +     0.826          net: MOTOR_CONTROLLER_0/pwm_left/ADD_m2_e_0_0
+  31.077                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un89_sum_ADD_m2_e:A (r)
+               +     0.407          cell: ADLIB:OR2A
+  31.484                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un89_sum_ADD_m2_e:Y (f)
+               +     1.173          net: MOTOR_CONTROLLER_0/pwm_left/ADD_N_5_mux_0
+  32.657                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un96_sum_ADD_9x9_fast_I1_G0N:A (f)
+               +     0.479          cell: ADLIB:NOR2A
+  33.136                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un96_sum_ADD_9x9_fast_I1_G0N:Y (f)
+               +     0.320          net: MOTOR_CONTROLLER_0/pwm_left/N129_3
+  33.456                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un96_sum_ADD_9x9_fast_I15_Y:B (f)
+               +     0.493          cell: ADLIB:OR2A
+  33.949                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un96_sum_ADD_9x9_fast_I15_Y:Y (f)
+               +     0.367          net: MOTOR_CONTROLLER_0/pwm_left/N154_6
+  34.316                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un96_sum_ADD_9x9_fast_I25_un1_Y:C (f)
+               +     0.517          cell: ADLIB:NOR3C
+  34.833                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un96_sum_ADD_9x9_fast_I25_un1_Y:Y (f)
+               +     0.488          net: MOTOR_CONTROLLER_0/pwm_left/I25_un1_Y_4
+  35.321                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un96_sum_ADD_m2_e:B (f)
+               +     0.490          cell: ADLIB:OR2A
+  35.811                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un96_sum_ADD_m2_e:Y (f)
+               +     0.473          net: MOTOR_CONTROLLER_0/pwm_left/ADD_N_5_mux
+  36.284                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un103_sum_ADD_9x9_fast_I5_P0N:B (f)
+               +     0.493          cell: ADLIB:OR2
+  36.777                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un103_sum_ADD_9x9_fast_I5_P0N:Y (f)
+               +     0.245          net: MOTOR_CONTROLLER_0/pwm_left/N142
+  37.022                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un103_sum_ADD_9x9_fast_I8_Y:C (f)
+               +     0.369          cell: ADLIB:OA1A
+  37.391                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un103_sum_ADD_9x9_fast_I8_Y:Y (f)
+               +     0.290          net: MOTOR_CONTROLLER_0/pwm_left/N147_2
+  37.681                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un103_sum_ADD_9x9_fast_I25_un1_Y_0:B (f)
+               +     0.476          cell: ADLIB:NOR2B
+  38.157                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un103_sum_ADD_9x9_fast_I25_un1_Y_0:Y (f)
+               +     0.245          net: MOTOR_CONTROLLER_0/pwm_left/ADD_9x9_fast_I25_un1_Y_0_1
+  38.402                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un103_sum_ADD_9x9_fast_I25_un1_Y:C (f)
+               +     0.369          cell: ADLIB:OA1A
+  38.771                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un103_sum_ADD_9x9_fast_I25_un1_Y:Y (f)
+               +     0.247          net: MOTOR_CONTROLLER_0/pwm_left/I25_un1_Y_5
+  39.018                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un103_sum_ADD_9x9_fast_I25_Y:B (f)
+               +     0.490          cell: ADLIB:OR2
+  39.508                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un103_sum_ADD_9x9_fast_I25_Y:Y (f)
+               +     1.108          net: MOTOR_CONTROLLER_0/pwm_left/N174_4
+  40.616                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un110_sum_ADD_9x9_fast_I1_G0N:A (f)
+               +     0.479          cell: ADLIB:NOR2A
+  41.095                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un110_sum_ADD_9x9_fast_I1_G0N:Y (f)
+               +     0.308          net: MOTOR_CONTROLLER_0/pwm_left/N129_1
+  41.403                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un110_sum_ADD_9x9_fast_I15_Y:B (f)
+               +     0.493          cell: ADLIB:OR2A
+  41.896                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un110_sum_ADD_9x9_fast_I15_Y:Y (f)
+               +     0.364          net: MOTOR_CONTROLLER_0/pwm_left/N154_7
+  42.260                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un110_sum_ADD_9x9_fast_I25_un1_Y:C (f)
+               +     0.517          cell: ADLIB:NOR3C
+  42.777                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un110_sum_ADD_9x9_fast_I25_un1_Y:Y (f)
+               +     1.025          net: MOTOR_CONTROLLER_0/pwm_left/I25_un1_Y_6
+  43.802                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un110_sum_ADD_9x9_fast_I25_Y:B (f)
+               +     0.490          cell: ADLIB:OR2
+  44.292                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un110_sum_ADD_9x9_fast_I25_Y:Y (f)
+               +     0.528          net: MOTOR_CONTROLLER_0/pwm_left/N174_3
+  44.820                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un117_sum_ADD_9x9_fast_I1_G0N:A (f)
+               +     0.479          cell: ADLIB:NOR2A
+  45.299                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un117_sum_ADD_9x9_fast_I1_G0N:Y (f)
+               +     0.308          net: MOTOR_CONTROLLER_0/pwm_left/N129_0
+  45.607                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un117_sum_ADD_9x9_fast_I15_Y:B (f)
+               +     0.493          cell: ADLIB:OR2A
+  46.100                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un117_sum_ADD_9x9_fast_I15_Y:Y (f)
+               +     0.364          net: MOTOR_CONTROLLER_0/pwm_left/N154_8
+  46.464                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un117_sum_ADD_9x9_fast_I25_un1_Y:C (f)
+               +     0.517          cell: ADLIB:NOR3C
+  46.981                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un117_sum_ADD_9x9_fast_I25_un1_Y:Y (f)
+               +     0.247          net: MOTOR_CONTROLLER_0/pwm_left/I25_un1_Y_7
+  47.228                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un117_sum_ADD_9x9_fast_I25_Y:B (f)
+               +     0.490          cell: ADLIB:OR2
+  47.718                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un117_sum_ADD_9x9_fast_I25_Y:Y (f)
+               +     0.854          net: MOTOR_CONTROLLER_0/pwm_left/N174_2
+  48.572                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un124_sum_ADD_9x9_fast_I1_G0N:A (f)
+               +     0.479          cell: ADLIB:NOR2A
+  49.051                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un124_sum_ADD_9x9_fast_I1_G0N:Y (f)
+               +     0.308          net: MOTOR_CONTROLLER_0/pwm_left/N129
+  49.359                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un124_sum_ADD_9x9_fast_I15_Y:B (f)
+               +     0.493          cell: ADLIB:OR2A
+  49.852                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un124_sum_ADD_9x9_fast_I15_Y:Y (f)
+               +     0.364          net: MOTOR_CONTROLLER_0/pwm_left/N154_9
+  50.216                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un124_sum_ADD_9x9_fast_I25_un1_Y:C (f)
+               +     0.517          cell: ADLIB:NOR3C
+  50.733                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un124_sum_ADD_9x9_fast_I25_un1_Y:Y (f)
+               +     0.247          net: MOTOR_CONTROLLER_0/pwm_left/I25_un1_Y_8
+  50.980                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un124_sum_ADD_9x9_fast_I25_Y:C (f)
+               +     0.570          cell: ADLIB:OR3
+  51.550                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un124_sum_ADD_9x9_fast_I25_Y:Y (f)
+               +     0.532          net: MOTOR_CONTROLLER_0/pwm_left/N174_1
+  52.082                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un131_sum_ADD_9x9_fast_I2_P0N:B (f)
+               +     0.493          cell: ADLIB:OR2
+  52.575                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un131_sum_ADD_9x9_fast_I2_P0N:Y (f)
+               +     0.897          net: MOTOR_CONTROLLER_0/pwm_left/N133_9
+  53.472                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un131_sum_ADD_9x9_fast_I12_Y:C (f)
+               +     0.369          cell: ADLIB:OA1A
+  53.841                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un131_sum_ADD_9x9_fast_I12_Y:Y (f)
+               +     0.282          net: MOTOR_CONTROLLER_0/pwm_left/N151_2
+  54.123                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un131_sum_ADD_9x9_fast_I25_un1_Y_0:A (f)
+               +     0.390          cell: ADLIB:NOR2B
+  54.513                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un131_sum_ADD_9x9_fast_I25_un1_Y_0:Y (f)
+               +     0.554          net: MOTOR_CONTROLLER_0/pwm_left/ADD_9x9_fast_I25_un1_Y_0_2
+  55.067                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un138_sum_ADD_m1_e:B (f)
+               +     0.479          cell: ADLIB:NOR2B
+  55.546                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un138_sum_ADD_m1_e:Y (f)
+               +     0.473          net: MOTOR_CONTROLLER_0/pwm_left/I25_un1_Y
+  56.019                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un131_sum_ADD_9x9_fast_I25_Y:B (f)
+               +     0.493          cell: ADLIB:OR2
+  56.512                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un131_sum_ADD_9x9_fast_I25_Y:Y (f)
+               +     0.364          net: MOTOR_CONTROLLER_0/pwm_left/N174_0
+  56.876                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un138_sum_ADD_9x9_fast_I21_Y_0:A (f)
+               +     0.746          cell: ADLIB:OA1A
+  57.622                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un138_sum_ADD_9x9_fast_I21_Y_0:Y (r)
+               +     0.255          net: MOTOR_CONTROLLER_0/pwm_left/ADD_9x9_fast_I21_Y_0
+  57.877                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un138_sum_ADD_9x9_fast_I21_Y:C (r)
+               +     0.497          cell: ADLIB:AO1
+  58.374                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un138_sum_ADD_9x9_fast_I21_Y:Y (r)
+               +     1.052          net: MOTOR_CONTROLLER_0/pwm_left/N178_7
+  59.426                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un145_sum_ADD_m1:B (r)
+               +     0.476          cell: ADLIB:XNOR2
+  59.902                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un145_sum_ADD_m1:Y (f)
+               +     0.356          net: MOTOR_CONTROLLER_0/pwm_left/ADD_m1
+  60.258                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un145_sum_ADD_m2_0:A (f)
+               +     0.469          cell: ADLIB:MX2B
+  60.727                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un145_sum_ADD_m2_0:Y (f)
+               +     0.278          net: MOTOR_CONTROLLER_0/pwm_left/ADD_m2_0_2
+  61.005                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un145_sum_ADD_9x9_fast_I25_Y_0_0:A (f)
+               +     0.364          cell: ADLIB:AO1A
+  61.369                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un145_sum_ADD_9x9_fast_I25_Y_0_0:Y (r)
+               +     0.255          net: MOTOR_CONTROLLER_0/pwm_left/ADD_9x9_fast_I25_Y_0_0
+  61.624                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un145_sum_ADD_9x9_fast_I25_Y:C (r)
+               +     0.497          cell: ADLIB:AO1A
+  62.121                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un145_sum_ADD_9x9_fast_I25_Y:Y (r)
+               +     0.772          net: MOTOR_CONTROLLER_0/pwm_left/N174
+  62.893                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un152_sum_ADD_9x9_fast_I2_P0N:B (r)
+               +     0.390          cell: ADLIB:OR2
+  63.283                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un152_sum_ADD_9x9_fast_I2_P0N:Y (r)
+               +     0.247          net: MOTOR_CONTROLLER_0/pwm_left/N133
+  63.530                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un152_sum_ADD_9x9_fast_I25_un1_Y_2:C (r)
+               +     0.570          cell: ADLIB:NOR3C
+  64.100                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un152_sum_ADD_9x9_fast_I25_un1_Y_2:Y (r)
+               +     0.245          net: MOTOR_CONTROLLER_0/pwm_left/ADD_9x9_fast_I25_un1_Y_2
+  64.345                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un152_sum_ADD_9x9_fast_I25_Y:A (r)
+               +     0.394          cell: ADLIB:AO1
+  64.739                       MOTOR_CONTROLLER_0/pwm_left/un1_DUTY_CYCLE_1_if_generate_plus.mult1_un152_sum_ADD_9x9_fast_I25_Y:Y (r)
+               +     0.351          net: MOTOR_CONTROLLER_0/pwm_left/N174_7
+  65.090                       MOTOR_CONTROLLER_0/pwm_left/PWM_OUT6_0_I_104:A (r)
+               +     0.407          cell: ADLIB:OR2A
+  65.497                       MOTOR_CONTROLLER_0/pwm_left/PWM_OUT6_0_I_104:Y (f)
+               +     0.255          net: MOTOR_CONTROLLER_0/pwm_left/ACT_LT4_E[1]
+  65.752                       MOTOR_CONTROLLER_0/pwm_left/PWM_OUT6_0_I_106:B (f)
+               +     0.746          cell: ADLIB:AOI1A
+  66.498                       MOTOR_CONTROLLER_0/pwm_left/PWM_OUT6_0_I_106:Y (r)
+               +     0.728          net: MOTOR_CONTROLLER_0/pwm_left/ACT_LT4_E[3]
+  67.226                       MOTOR_CONTROLLER_0/pwm_left/PWM_OUT6_0_I_113:A (r)
+               +     0.683          cell: ADLIB:AOI1A
+  67.909                       MOTOR_CONTROLLER_0/pwm_left/PWM_OUT6_0_I_113:Y (r)
+               +     0.255          net: MOTOR_CONTROLLER_0/pwm_left/DWACT_CMPLE_PO2_DWACT_COMP0_E_0[0]
+  68.164                       MOTOR_CONTROLLER_0/pwm_left/PWM_OUT6_0_I_125:C (r)
+               +     0.497          cell: ADLIB:AO1
+  68.661                       MOTOR_CONTROLLER_0/pwm_left/PWM_OUT6_0_I_125:Y (r)
+               +     0.255          net: MOTOR_CONTROLLER_0/pwm_left/DWACT_CMPLE_PO2_DWACT_COMP0_E_0[2]
+  68.916                       MOTOR_CONTROLLER_0/pwm_left/PWM_OUT6_0_I_126:B (r)
+               +     0.430          cell: ADLIB:AO1
+  69.346                       MOTOR_CONTROLLER_0/pwm_left/PWM_OUT6_0_I_126:Y (r)
+               +     0.255          net: MOTOR_CONTROLLER_0/pwm_left/DWACT_COMP0_E[2]
+  69.601                       MOTOR_CONTROLLER_0/pwm_left/PWM_OUT6_0_I_127:B (r)
+               +     0.430          cell: ADLIB:AO1
+  70.031                       MOTOR_CONTROLLER_0/pwm_left/PWM_OUT6_0_I_127:Y (r)
+               +     0.279          net: MOTOR_CONTROLLER_0/pwm_left/PWM_OUT6
+  70.310                       MOTOR_CONTROLLER_0/pwm_left/PWM_OUT:D (r)
+                                    
+  70.310                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       mss_ccc_gla1
+               +     0.000          Clock source
+  10.000                       followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  14.630
+               +     0.000          net: followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  14.630                       followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  14.630                       followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.513          net: FAB_CLK
+  15.143                       MOTOR_CONTROLLER_0/pwm_left/PWM_OUT:CLK (r)
+               -     0.409          Library setup time: ADLIB:DFN1
+  14.734                       MOTOR_CONTROLLER_0/pwm_left/PWM_OUT:D
+                                    
+  14.734                       data required time
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        MOTOR_CONTROLLER_0/LEFT_HB2:CLK
+  To:                          LEFT_HB2
+  Delay (ns):                  6.086
+  Slack (ns):
+  Arrival (ns):                11.228
+  Required (ns):
+  Clock to Out (ns):           11.228
+
+Path 2
+  From:                        MOTOR_CONTROLLER_0/LEFT_HB1:CLK
+  To:                          LEFT_HB1
+  Delay (ns):                  5.231
+  Slack (ns):
+  Arrival (ns):                10.344
+  Required (ns):
+  Clock to Out (ns):           10.344
+
+Path 3
+  From:                        MOTOR_CONTROLLER_0/RIGHT_HB1:CLK
+  To:                          RIGHT_HB1
+  Delay (ns):                  4.088
+  Slack (ns):
+  Arrival (ns):                9.221
+  Required (ns):
+  Clock to Out (ns):           9.221
+
+Path 4
+  From:                        MOTOR_CONTROLLER_0/RIGHT_HB2:CLK
+  To:                          RIGHT_HB2
+  Delay (ns):                  4.064
+  Slack (ns):
+  Arrival (ns):                9.194
+  Required (ns):
+  Clock to Out (ns):           9.194
+
+
+Expanded Path 1
+  From: MOTOR_CONTROLLER_0/LEFT_HB2:CLK
+  To: LEFT_HB2
+  data required time                             N/C
+  data arrival time                          -   11.228
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  4.630
+               +     0.000          net: followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  4.630                        followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  4.630                        followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.512          net: FAB_CLK
+  5.142                        MOTOR_CONTROLLER_0/LEFT_HB2:CLK (r)
+               +     0.559          cell: ADLIB:DFN1
+  5.701                        MOTOR_CONTROLLER_0/LEFT_HB2:Q (f)
+               +     2.277          net: LEFT_HB2_c
+  7.978                        LEFT_HB2_pad/U0/U1:D (f)
+               +     0.442          cell: ADLIB:IOTRI_OB_EB
+  8.420                        LEFT_HB2_pad/U0/U1:DOUT (f)
+               +     0.000          net: LEFT_HB2_pad/U0/NET1
+  8.420                        LEFT_HB2_pad/U0/U0:D (f)
+               +     2.808          cell: ADLIB:IOPAD_TRI
+  11.228                       LEFT_HB2_pad/U0/U0:PAD (f)
+               +     0.000          net: LEFT_HB2
+  11.228                       LEFT_HB2 (f)
+                                    
+  11.228                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla1
+               +     0.000          Clock source
+  N/C                          followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  N/C
+                                    
+  N/C                          LEFT_HB2 (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET mss_fabric_interface_clock to mss_ccc_gla1
+
+Path 1
+  From:                        followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE[4]:D
+  Delay (ns):                  9.794
+  Slack (ns):                  1.468
+  Arrival (ns):                13.244
+  Required (ns):               14.712
+  Setup (ns):                  0.409
+
+Path 2
+  From:                        followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE_0_0[3]:D
+  Delay (ns):                  9.347
+  Slack (ns):                  1.906
+  Arrival (ns):                12.797
+  Required (ns):               14.703
+  Setup (ns):                  0.409
+
+Path 3
+  From:                        followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE[0]:D
+  Delay (ns):                  9.319
+  Slack (ns):                  1.946
+  Arrival (ns):                12.769
+  Required (ns):               14.715
+  Setup (ns):                  0.409
+
+Path 4
+  From:                        followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE_0_0[4]:D
+  Delay (ns):                  9.263
+  Slack (ns):                  1.990
+  Arrival (ns):                12.713
+  Required (ns):               14.703
+  Setup (ns):                  0.409
+
+Path 5
+  From:                        followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                          MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE[3]:D
+  Delay (ns):                  9.053
+  Slack (ns):                  2.233
+  Arrival (ns):                12.503
+  Required (ns):               14.736
+  Setup (ns):                  0.409
+
+
+Expanded Path 1
+  From: followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB
+  To: MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE[4]:D
+  data required time                             14.712
+  data arrival time                          -   13.244
+  slack                                          1.468
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_fabric_interface_clock
+               +     0.000          Clock source
+  0.000                        followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:GLB (r)
+               +     3.450          Clock generation
+  3.450
+               +     2.778          cell: ADLIB:MSS_APB_IP
+  6.228                        followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:MSSPWRITE (r)
+               +     0.104          net: followme_car_MSS_0/MSS_ADLIB_INST/MSSPWRITEINT_NET
+  6.332                        followme_car_MSS_0/MSS_ADLIB_INST/U_42:PIN3INT (r)
+               +     0.072          cell: ADLIB:MSS_IF
+  6.404                        followme_car_MSS_0/MSS_ADLIB_INST/U_42:PIN3 (r)
+               +     1.040          net: CoreAPB3_0_APBmslave0_PWRITE
+  7.444                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE_0_sqmuxa_3:A (r)
+               +     0.504          cell: ADLIB:NOR3A
+  7.948                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE_0_sqmuxa_3:Y (r)
+               +     0.255          net: MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE_0_sqmuxa_3
+  8.203                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE_0_sqmuxa:C (r)
+               +     0.505          cell: ADLIB:NOR3C
+  8.708                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE_0_sqmuxa:Y (r)
+               +     1.596          net: MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE_0_sqmuxa
+  10.304                       MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE_0_0_RNID9701[4]:S (r)
+               +     0.282          cell: ADLIB:MX2
+  10.586                       MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE_0_0_RNID9701[4]:Y (f)
+               +     0.237          net: MOTOR_CONTROLLER_0/N_56
+  10.823                       MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE_0_0_RNI1DL31[4]:A (f)
+               +     0.390          cell: ADLIB:NOR2B
+  11.213                       MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE_0_0_RNI1DL31[4]:Y (f)
+               +     2.031          net: MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE_0_0_RNI1DL31[4]
+  13.244                       MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE[4]:D (f)
+                                    
+  13.244                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       mss_ccc_gla1
+               +     0.000          Clock source
+  10.000                       followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  14.630
+               +     0.000          net: followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  14.630                       followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  14.630                       followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.491          net: FAB_CLK
+  15.121                       MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE[4]:CLK (r)
+               -     0.409          Library setup time: ADLIB:DFN1
+  14.712                       MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE[4]:D
+                                    
+  14.712                       data required time
+
+
+END SET mss_fabric_interface_clock to mss_ccc_gla1
+
+----------------------------------------------------
+
+SET mss_ccc_gla0 to mss_ccc_gla1
+
+Path 1
+  From:                        followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE_0_0[3]:D
+  Delay (ns):                  7.398
+  Slack (ns):                  3.829
+  Arrival (ns):                10.848
+  Required (ns):               14.677
+  Setup (ns):                  0.435
+
+Path 2
+  From:                        followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE[4]:D
+  Delay (ns):                  7.392
+  Slack (ns):                  3.844
+  Arrival (ns):                10.842
+  Required (ns):               14.686
+  Setup (ns):                  0.435
+
+Path 3
+  From:                        followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE_0_0[4]:D
+  Delay (ns):                  6.901
+  Slack (ns):                  4.326
+  Arrival (ns):                10.351
+  Required (ns):               14.677
+  Setup (ns):                  0.435
+
+Path 4
+  From:                        followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE[2]:D
+  Delay (ns):                  6.804
+  Slack (ns):                  4.435
+  Arrival (ns):                10.254
+  Required (ns):               14.689
+  Setup (ns):                  0.435
+
+Path 5
+  From:                        followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                          MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE[3]:D
+  Delay (ns):                  6.669
+  Slack (ns):                  4.591
+  Arrival (ns):                10.119
+  Required (ns):               14.710
+  Setup (ns):                  0.435
+
+
+Expanded Path 1
+  From: followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To: MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE_0_0[3]:D
+  data required time                             14.677
+  data arrival time                          -   10.848
+  slack                                          3.829
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla0
+               +     0.000          Clock source
+  0.000                        followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLAMSS (r)
+               +     2.925          Clock generation
+  2.925
+               +     0.525          net: followme_car_MSS_0/GLA0
+  3.450                        followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK (r)
+               +     3.027          cell: ADLIB:MSS_APB_IP
+  6.477                        followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:M2FRESETn (r)
+               +     0.102          net: followme_car_MSS_0/MSS_ADLIB_INST/M2FRESETnINT_NET
+  6.579                        followme_car_MSS_0/MSS_ADLIB_INST/U_46:PIN2INT (r)
+               +     0.079          cell: ADLIB:MSS_IF
+  6.658                        followme_car_MSS_0/MSS_ADLIB_INST/U_46:PIN2 (r)
+               +     1.811          net: followme_car_MSS_0_M2F_RESET_N
+  8.469                        MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE_0_0_RNI0CL31[3]:B (r)
+               +     0.392          cell: ADLIB:NOR2B
+  8.861                        MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE_0_0_RNI0CL31[3]:Y (r)
+               +     1.987          net: MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE_0_0_RNI0CL31[3]
+  10.848                       MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE_0_0[3]:D (r)
+                                    
+  10.848                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  10.000                       mss_ccc_gla1
+               +     0.000          Clock source
+  10.000                       followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     4.630          Clock generation
+  14.630
+               +     0.000          net: followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  14.630                       followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  14.630                       followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.482          net: FAB_CLK
+  15.112                       MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE_0_0[3]:CLK (r)
+               -     0.435          Library setup time: ADLIB:DFN1
+  14.677                       MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE_0_0[3]:D
+                                    
+  14.677                       data required time
+
+
+END SET mss_ccc_gla0 to mss_ccc_gla1
+
+----------------------------------------------------
+
+Clock Domain mss_ccc_gla0
+
+Info: The maximum frequency of this clock domain is limited by the period of pin followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        MSS_RESET_N
+  To:                          followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+  Delay (ns):                  0.781
+  Slack (ns):
+  Arrival (ns):                0.781
+  Required (ns):
+  Setup (ns):                  -1.830
+  External Setup (ns):         -4.499
+
+
+Expanded Path 1
+  From: MSS_RESET_N
+  To: followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+  data required time                             N/C
+  data arrival time                          -   0.781
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        MSS_RESET_N (r)
+               +     0.000          net: MSS_RESET_N
+  0.000                        followme_car_MSS_0/MSS_RESET_0_MSS_RESET_N:PAD (r)
+               +     0.781          cell: ADLIB:IOPAD_IN
+  0.781                        followme_car_MSS_0/MSS_RESET_0_MSS_RESET_N:Y (r)
+               +     0.000          net: followme_car_MSS_0/MSS_RESET_0_MSS_RESET_N_Y
+  0.781                        followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:MSSRESETn (r)
+                                    
+  0.781                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla0
+               +     0.000          Clock source
+  N/C                          followme_car_MSS_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLAMSS (r)
+               +     2.925          Clock generation
+  N/C
+               +     0.525          net: followme_car_MSS_0/GLA0
+  N/C                          followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:FCLK (r)
+               -    -1.830          Library setup time: ADLIB:MSS_APB_IP
+  N/C                          followme_car_MSS_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain followme_car_MSS_0/MSS_CCC_0/I_RCOSC:CLKOUT
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+No Path
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

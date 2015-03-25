@@ -1,0 +1,87 @@
+Microsemi Libero Software
+Version: 11.4.0.112
+Release: v11.4
+
+Info: The design followme_car.adb was last modified by software version 11.4.0.112.
+Opened an existing Libero design followme_car.adb.
+'BA_NAME' set to 'followme_car_ba'
+'IDE_DESIGNERVIEW_NAME' set to 'Impl1'
+'IDE_DESIGNERVIEW_COUNT' set to '1'
+'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
+'IDE_DESIGNERVIEW_REVNUM0' set to '1'
+'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\owenyang\Desktop\FollowMe\followme_car\designer'
+'IDE_DESIGNERVIEW_LASTREV' set to '1'
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+Info: I/O Bank Assigner detected (1) out of (6) I/O Bank(s) with locked I/O technologies.
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+ 
+
+Planning global net placement...
+
+
+Global net placement completed successfully.
+
+                        o - o - o - o - o - o
+
+Timing-driven Placer Started: Wed Mar 25 18:25:22 2015
+
+Placer Finished: Wed Mar 25 18:25:45 2015
+Total Placer CPU Time:     00:00:23
+
+                        o - o - o - o - o - o
+
+
+Timing-driven Router 
+Design: followme_car                    Started: Wed Mar 25 18:25:50 2015
+
+ 
+Iterative improvement...
+
+Timing-driven Router completed successfully.
+
+Design: followme_car                    
+Finished: Wed Mar 25 18:26:08 2015
+Total CPU Time:     00:00:17            Total Elapsed Time: 00:00:18
+Total Memory Usage: 183.5 Mbytes
+                        o - o - o - o - o - o
+
+Loading the Timing data for the design.
+Finished loading the Timing data.
+TIMER: Max delay timing requirements have NOT been met.
+TIMER: Min delay timing requirements have been met.
+
+The Layout command succeeded ( 00:00:54 )
+Wrote status report to file: followme_car_place_and_route_report.txt
+
+The Report command succeeded ( 00:00:00 )
+Wrote globalnet report to file: followme_car_globalnet_report.txt
+
+The Report command succeeded ( 00:00:00 )
+Wrote globalusage report to file: followme_car_globalusage_report.txt
+
+The Report command succeeded ( 00:00:00 )
+Wrote iobank report to file: followme_car_iobank_report.txt
+
+The Report command succeeded ( 00:00:00 )
+Wrote pin report to file: followme_car_report_pin_byname.txt
+
+The Report command succeeded ( 00:00:01 )
+Wrote pin report to file: followme_car_report_pin_bynumber.txt
+
+The Report command succeeded ( 00:00:01 )
+Design saved to file
+C:\Users\owenyang\Desktop\FollowMe\followme_car\designer\impl1\followme_car.adb.
+
+The Execute Script command succeeded ( 00:00:59 )
+Design closed.
+

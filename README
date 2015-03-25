@@ -1,2 +1,39 @@
 EECS373 Project
 Follow Me
+
+
+MOTOR CONTROLLER
+================
+
+PWDATA BIT MAPPING:
+--------------------------------
+Bits		Purpose
+--------------------------------
+0 	 	RIGHT FWD/~REV
+1 		LEFT FWD/~REV
+2-8	 	RIGHT DUTY CYCLE
+9-15	 	LEFT DUTY CYCLE
+--------------------------------
+
+
+WIRE CONNECTIONS:
+-------------------------------------------
+DEVICE		PIN	DEVICE		PIN
+-------------------------------------------
+SF-Expansion	F0	H-Bridge	IN2
+SF-Expansion	F1	H-Bridge	IN1
+SF-Expansion	F2	H-Bridge	IN3
+SF-Expansion	F3	H-Bridge	IN4
+-------------------------------------------
+
+
+H-BRIDGE INFO:
+-------------------------------
+PWM Frequency		= 100Hz
+Minimum Duty Cycle	= 40%
+Maximum Duty Cycle	= 90%
+VS (same as motors) 	= 7.3V
+VLS 			= 5V
+CSA 			= 0V
+CSB 			= 0V
+-------------------------------

@@ -1,0 +1,166 @@
+Timing Violation Report Max Delay Analysis
+
+SmartTime Version v11.4
+Microsemi Corporation - Microsemi Libero Software Release v11.4 (Version 11.4.0.112)
+Date: Wed Mar 25 18:26:21 2015
+
+
+Design: followme_car
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+Temperature: COM
+Voltage: COM
+Speed Grade: -1
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Condition: BEST
+Max Operating Condition: WORST
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+Path 1
+  From:                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE[2]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_left/PWM_OUT:D
+  Delay (ns):                  65.165
+  Slack (ns):                  -55.576
+  Arrival (ns):                70.310
+  Required (ns):               14.734
+
+Path 2
+  From:                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE[3]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_left/PWM_OUT:D
+  Delay (ns):                  65.084
+  Slack (ns):                  -55.495
+  Arrival (ns):                70.229
+  Required (ns):               14.734
+
+Path 3
+  From:                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE[0]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_left/PWM_OUT:D
+  Delay (ns):                  64.914
+  Slack (ns):                  -55.325
+  Arrival (ns):                70.059
+  Required (ns):               14.734
+
+Path 4
+  From:                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE[1]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_left/PWM_OUT:D
+  Delay (ns):                  64.771
+  Slack (ns):                  -55.161
+  Arrival (ns):                69.895
+  Required (ns):               14.734
+
+Path 5
+  From:                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE[6]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_left/PWM_OUT:D
+  Delay (ns):                  64.615
+  Slack (ns):                  -55.026
+  Arrival (ns):                69.760
+  Required (ns):               14.734
+
+Path 6
+  From:                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE[5]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_left/PWM_OUT:D
+  Delay (ns):                  64.354
+  Slack (ns):                  -54.748
+  Arrival (ns):                69.482
+  Required (ns):               14.734
+
+Path 7
+  From:                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE_0_0[4]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_left/PWM_OUT:D
+  Delay (ns):                  64.260
+  Slack (ns):                  -54.671
+  Arrival (ns):                69.405
+  Required (ns):               14.734
+
+Path 8
+  From:                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE[4]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_left/PWM_OUT:D
+  Delay (ns):                  64.259
+  Slack (ns):                  -54.670
+  Arrival (ns):                69.404
+  Required (ns):               14.734
+
+Path 9
+  From:                        MOTOR_CONTROLLER_0/LEFT_DUTY_CYCLE_0_0[1]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_left/PWM_OUT:D
+  Delay (ns):                  63.713
+  Slack (ns):                  -54.107
+  Arrival (ns):                68.841
+  Required (ns):               14.734
+
+Path 10
+  From:                        MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE[1]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_right/PWM_OUT:D
+  Delay (ns):                  62.706
+  Slack (ns):                  -53.130
+  Arrival (ns):                67.827
+  Required (ns):               14.697
+
+Path 11
+  From:                        MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE[0]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_right/PWM_OUT:D
+  Delay (ns):                  61.914
+  Slack (ns):                  -52.341
+  Arrival (ns):                67.038
+  Required (ns):               14.697
+
+Path 12
+  From:                        MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE_0_0[4]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_right/PWM_OUT:D
+  Delay (ns):                  61.677
+  Slack (ns):                  -52.092
+  Arrival (ns):                66.789
+  Required (ns):               14.697
+
+Path 13
+  From:                        MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE[2]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_right/PWM_OUT:D
+  Delay (ns):                  61.620
+  Slack (ns):                  -52.047
+  Arrival (ns):                66.744
+  Required (ns):               14.697
+
+Path 14
+  From:                        MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE[5]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_right/PWM_OUT:D
+  Delay (ns):                  61.592
+  Slack (ns):                  -52.016
+  Arrival (ns):                66.713
+  Required (ns):               14.697
+
+Path 15
+  From:                        MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE[6]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_right/PWM_OUT:D
+  Delay (ns):                  61.438
+  Slack (ns):                  -51.862
+  Arrival (ns):                66.559
+  Required (ns):               14.697
+
+Path 16
+  From:                        MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE[3]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_right/PWM_OUT:D
+  Delay (ns):                  61.357
+  Slack (ns):                  -51.784
+  Arrival (ns):                66.481
+  Required (ns):               14.697
+
+Path 17
+  From:                        MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE[4]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_right/PWM_OUT:D
+  Delay (ns):                  60.568
+  Slack (ns):                  -50.992
+  Arrival (ns):                65.689
+  Required (ns):               14.697
+
+Path 18
+  From:                        MOTOR_CONTROLLER_0/RIGHT_DUTY_CYCLE_0_0[3]:CLK
+  To:                          MOTOR_CONTROLLER_0/pwm_right/PWM_OUT:D
+  Delay (ns):                  59.941
+  Slack (ns):                  -50.356
+  Arrival (ns):                65.053
+  Required (ns):               14.697
+

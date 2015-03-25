@@ -1,0 +1,1195 @@
+
+followme_car_MSS_MSS_CM3_0_app:     file format elf32-littlearm
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000007c8  20000000  20000000  00008000  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000004  200007c8  200007c8  000087c8  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000004  200007cc  200007cc  000087cc  2**0
+                  ALLOC
+  3 .stack        00003000  200007d0  200007d0  000087cc  2**0
+                  ALLOC
+  4 .comment      000000ac  00000000  00000000  000087cc  2**0
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000158  00000000  00000000  00008878  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_pubnames 0000025c  00000000  00000000  000089d0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_info   00000f12  00000000  00000000  00008c2c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_abbrev 0000033c  00000000  00000000  00009b3e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_line   00000a1b  00000000  00000000  00009e7a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_frame  00000420  00000000  00000000  0000a898  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_str    00000790  00000000  00000000  0000acb8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_loc    0000066d  00000000  00000000  0000b448  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_macinfo 0000f23e  00000000  00000000  0000bab5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .ARM.attributes 00000025  00000000  00000000  0001acf3  2**0
+                  CONTENTS, READONLY
+ 15 .debug_ranges 00000138  00000000  00000000  0001ad18  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+20000000 <__text_start>:
+20000000:	20010000 	.word	0x20010000
+20000004:	20000299 	.word	0x20000299
+20000008:	20000309 	.word	0x20000309
+2000000c:	2000030b 	.word	0x2000030b
+20000010:	2000030d 	.word	0x2000030d
+20000014:	2000030f 	.word	0x2000030f
+20000018:	20000311 	.word	0x20000311
+	...
+2000002c:	20000313 	.word	0x20000313
+20000030:	20000315 	.word	0x20000315
+20000034:	00000000 	.word	0x00000000
+20000038:	20000317 	.word	0x20000317
+2000003c:	20000319 	.word	0x20000319
+20000040:	2000031b 	.word	0x2000031b
+20000044:	2000031d 	.word	0x2000031d
+20000048:	2000031f 	.word	0x2000031f
+2000004c:	20000321 	.word	0x20000321
+20000050:	20000323 	.word	0x20000323
+20000054:	20000325 	.word	0x20000325
+20000058:	20000327 	.word	0x20000327
+2000005c:	20000329 	.word	0x20000329
+20000060:	2000032b 	.word	0x2000032b
+20000064:	2000032d 	.word	0x2000032d
+20000068:	2000032f 	.word	0x2000032f
+2000006c:	20000331 	.word	0x20000331
+20000070:	20000333 	.word	0x20000333
+20000074:	20000335 	.word	0x20000335
+20000078:	20000337 	.word	0x20000337
+2000007c:	20000339 	.word	0x20000339
+20000080:	2000033b 	.word	0x2000033b
+20000084:	2000033d 	.word	0x2000033d
+20000088:	2000033f 	.word	0x2000033f
+2000008c:	20000341 	.word	0x20000341
+20000090:	20000343 	.word	0x20000343
+20000094:	20000345 	.word	0x20000345
+20000098:	20000347 	.word	0x20000347
+2000009c:	20000349 	.word	0x20000349
+200000a0:	2000034b 	.word	0x2000034b
+	...
+200000bc:	2000034d 	.word	0x2000034d
+200000c0:	2000034f 	.word	0x2000034f
+200000c4:	20000351 	.word	0x20000351
+200000c8:	20000353 	.word	0x20000353
+200000cc:	20000355 	.word	0x20000355
+200000d0:	20000357 	.word	0x20000357
+200000d4:	20000359 	.word	0x20000359
+200000d8:	2000035b 	.word	0x2000035b
+200000dc:	2000035d 	.word	0x2000035d
+200000e0:	2000035f 	.word	0x2000035f
+200000e4:	20000361 	.word	0x20000361
+200000e8:	20000363 	.word	0x20000363
+200000ec:	20000365 	.word	0x20000365
+200000f0:	20000367 	.word	0x20000367
+200000f4:	20000369 	.word	0x20000369
+200000f8:	2000036b 	.word	0x2000036b
+200000fc:	2000036d 	.word	0x2000036d
+20000100:	2000036f 	.word	0x2000036f
+20000104:	20000371 	.word	0x20000371
+20000108:	20000373 	.word	0x20000373
+2000010c:	20000375 	.word	0x20000375
+20000110:	20000377 	.word	0x20000377
+20000114:	20000379 	.word	0x20000379
+20000118:	2000037b 	.word	0x2000037b
+2000011c:	2000037d 	.word	0x2000037d
+20000120:	2000037f 	.word	0x2000037f
+20000124:	20000381 	.word	0x20000381
+20000128:	20000383 	.word	0x20000383
+2000012c:	20000385 	.word	0x20000385
+20000130:	20000387 	.word	0x20000387
+20000134:	20000389 	.word	0x20000389
+20000138:	2000038b 	.word	0x2000038b
+2000013c:	2000038d 	.word	0x2000038d
+20000140:	2000038f 	.word	0x2000038f
+20000144:	20000391 	.word	0x20000391
+20000148:	20000393 	.word	0x20000393
+2000014c:	20000395 	.word	0x20000395
+20000150:	20000397 	.word	0x20000397
+20000154:	20000399 	.word	0x20000399
+20000158:	2000039b 	.word	0x2000039b
+2000015c:	2000039d 	.word	0x2000039d
+20000160:	2000039f 	.word	0x2000039f
+20000164:	200003a1 	.word	0x200003a1
+20000168:	200003a3 	.word	0x200003a3
+2000016c:	200003a5 	.word	0x200003a5
+20000170:	200003a7 	.word	0x200003a7
+20000174:	200003a9 	.word	0x200003a9
+20000178:	200003ab 	.word	0x200003ab
+2000017c:	200003ad 	.word	0x200003ad
+20000180:	200003af 	.word	0x200003af
+20000184:	200003b1 	.word	0x200003b1
+20000188:	200003b3 	.word	0x200003b3
+2000018c:	200003b5 	.word	0x200003b5
+20000190:	200003b7 	.word	0x200003b7
+20000194:	200003b9 	.word	0x200003b9
+20000198:	200003bb 	.word	0x200003bb
+2000019c:	200003bd 	.word	0x200003bd
+200001a0:	200003bf 	.word	0x200003bf
+200001a4:	200003c1 	.word	0x200003c1
+200001a8:	200003c3 	.word	0x200003c3
+200001ac:	200003c5 	.word	0x200003c5
+200001b0:	200003c7 	.word	0x200003c7
+200001b4:	200003c9 	.word	0x200003c9
+200001b8:	200003cb 	.word	0x200003cb
+200001bc:	200003cd 	.word	0x200003cd
+200001c0:	200003cf 	.word	0x200003cf
+200001c4:	200003d1 	.word	0x200003d1
+200001c8:	200003d3 	.word	0x200003d3
+200001cc:	200003d5 	.word	0x200003d5
+200001d0:	200003d7 	.word	0x200003d7
+200001d4:	200003d9 	.word	0x200003d9
+200001d8:	200003db 	.word	0x200003db
+200001dc:	200003dd 	.word	0x200003dd
+200001e0:	200003df 	.word	0x200003df
+200001e4:	200003e1 	.word	0x200003e1
+200001e8:	200003e3 	.word	0x200003e3
+200001ec:	200003e5 	.word	0x200003e5
+200001f0:	200003e7 	.word	0x200003e7
+200001f4:	200003e9 	.word	0x200003e9
+200001f8:	200003eb 	.word	0x200003eb
+200001fc:	200003ed 	.word	0x200003ed
+20000200:	200003ef 	.word	0x200003ef
+20000204:	200003f1 	.word	0x200003f1
+20000208:	200003f3 	.word	0x200003f3
+2000020c:	200003f5 	.word	0x200003f5
+20000210:	200003f7 	.word	0x200003f7
+20000214:	200003f9 	.word	0x200003f9
+20000218:	200003fb 	.word	0x200003fb
+2000021c:	200003fd 	.word	0x200003fd
+20000220:	200003ff 	.word	0x200003ff
+20000224:	20000401 	.word	0x20000401
+20000228:	20000403 	.word	0x20000403
+2000022c:	20000405 	.word	0x20000405
+20000230:	20000407 	.word	0x20000407
+20000234:	20000409 	.word	0x20000409
+20000238:	2000040b 	.word	0x2000040b
+2000023c:	2000040d 	.word	0x2000040d
+20000240:	2000040f 	.word	0x2000040f
+20000244:	20000411 	.word	0x20000411
+20000248:	20000413 	.word	0x20000413
+2000024c:	20000415 	.word	0x20000415
+20000250:	20000417 	.word	0x20000417
+20000254:	20000419 	.word	0x20000419
+20000258:	2000041b 	.word	0x2000041b
+2000025c:	2000041d 	.word	0x2000041d
+20000260:	2000041f 	.word	0x2000041f
+20000264:	20000421 	.word	0x20000421
+20000268:	20000423 	.word	0x20000423
+2000026c:	20000425 	.word	0x20000425
+20000270:	20000427 	.word	0x20000427
+20000274:	20000429 	.word	0x20000429
+20000278:	2000042b 	.word	0x2000042b
+2000027c:	2000042d 	.word	0x2000042d
+20000280:	2000042f 	.word	0x2000042f
+20000284:	20000431 	.word	0x20000431
+20000288:	20000433 	.word	0x20000433
+2000028c:	20000435 	.word	0x20000435
+20000290:	20000437 	.word	0x20000437
+20000294:	20000439 	.word	0x20000439
+
+20000298 <Reset_Handler>:
+20000298:	4868      	ldr	r0, [pc, #416]	; (2000043c <ACE_PPE_Flag31_IRQHandler+0x4>)
+2000029a:	4780      	blx	r0
+2000029c:	4868      	ldr	r0, [pc, #416]	; (20000440 <ACE_PPE_Flag31_IRQHandler+0x8>)
+2000029e:	2800      	cmp	r0, #0
+200002a0:	d10b      	bne.n	200002ba <copy_data>
+200002a2:	4868      	ldr	r0, [pc, #416]	; (20000444 <ACE_PPE_Flag31_IRQHandler+0xc>)
+200002a4:	4968      	ldr	r1, [pc, #416]	; (20000448 <ACE_PPE_Flag31_IRQHandler+0x10>)
+200002a6:	4a69      	ldr	r2, [pc, #420]	; (2000044c <ACE_PPE_Flag31_IRQHandler+0x14>)
+200002a8:	4288      	cmp	r0, r1
+200002aa:	d006      	beq.n	200002ba <copy_data>
+
+200002ac <copy_code_loop>:
+200002ac:	4291      	cmp	r1, r2
+200002ae:	bf1c      	itt	ne
+200002b0:	f850 3b04 	ldrne.w	r3, [r0], #4
+200002b4:	f841 3b04 	strne.w	r3, [r1], #4
+200002b8:	d1f8      	bne.n	200002ac <copy_code_loop>
+
+200002ba <copy_data>:
+200002ba:	4865      	ldr	r0, [pc, #404]	; (20000450 <ACE_PPE_Flag31_IRQHandler+0x18>)
+200002bc:	4965      	ldr	r1, [pc, #404]	; (20000454 <ACE_PPE_Flag31_IRQHandler+0x1c>)
+200002be:	4a66      	ldr	r2, [pc, #408]	; (20000458 <ACE_PPE_Flag31_IRQHandler+0x20>)
+200002c0:	4288      	cmp	r0, r1
+200002c2:	d006      	beq.n	200002d2 <clear_bss>
+
+200002c4 <copy_data_loop>:
+200002c4:	4291      	cmp	r1, r2
+200002c6:	bf1c      	itt	ne
+200002c8:	f850 3b04 	ldrne.w	r3, [r0], #4
+200002cc:	f841 3b04 	strne.w	r3, [r1], #4
+200002d0:	d1f8      	bne.n	200002c4 <copy_data_loop>
+
+200002d2 <clear_bss>:
+200002d2:	4862      	ldr	r0, [pc, #392]	; (2000045c <ACE_PPE_Flag31_IRQHandler+0x24>)
+200002d4:	4962      	ldr	r1, [pc, #392]	; (20000460 <ACE_PPE_Flag31_IRQHandler+0x28>)
+200002d6:	4a63      	ldr	r2, [pc, #396]	; (20000464 <ACE_PPE_Flag31_IRQHandler+0x2c>)
+
+200002d8 <clear_bss_loop>:
+200002d8:	4291      	cmp	r1, r2
+200002da:	bf18      	it	ne
+200002dc:	f841 0b04 	strne.w	r0, [r1], #4
+200002e0:	d1fa      	bne.n	200002d8 <clear_bss_loop>
+	...
+
+200002f0 <call_glob_ctor>:
+200002f0:	f8df 0174 	ldr.w	r0, [pc, #372]	; 20000468 <ACE_PPE_Flag31_IRQHandler+0x30>
+200002f4:	f20f 0e03 	addw	lr, pc, #3
+200002f8:	4700      	bx	r0
+
+200002fa <branch_to_main>:
+200002fa:	f04f 0000 	mov.w	r0, #0
+200002fe:	f04f 0100 	mov.w	r1, #0
+20000302:	f8df f168 	ldr.w	pc, [pc, #360]	; 2000046c <ACE_PPE_Flag31_IRQHandler+0x34>
+
+20000306 <ExitLoop>:
+20000306:	e7fe      	b.n	20000306 <ExitLoop>
+
+20000308 <NMI_Handler>:
+20000308:	e7fe      	b.n	20000308 <NMI_Handler>
+
+2000030a <HardFault_Handler>:
+2000030a:	e7fe      	b.n	2000030a <HardFault_Handler>
+
+2000030c <MemManage_Handler>:
+2000030c:	e7fe      	b.n	2000030c <MemManage_Handler>
+
+2000030e <BusFault_Handler>:
+2000030e:	e7fe      	b.n	2000030e <BusFault_Handler>
+
+20000310 <UsageFault_Handler>:
+20000310:	e7fe      	b.n	20000310 <UsageFault_Handler>
+
+20000312 <SVC_Handler>:
+20000312:	e7fe      	b.n	20000312 <SVC_Handler>
+
+20000314 <DebugMon_Handler>:
+20000314:	e7fe      	b.n	20000314 <DebugMon_Handler>
+
+20000316 <PendSV_Handler>:
+20000316:	e7fe      	b.n	20000316 <PendSV_Handler>
+
+20000318 <SysTick_Handler>:
+20000318:	e7fe      	b.n	20000318 <SysTick_Handler>
+
+2000031a <WdogWakeup_IRQHandler>:
+2000031a:	e7fe      	b.n	2000031a <WdogWakeup_IRQHandler>
+
+2000031c <BrownOut_1_5V_IRQHandler>:
+2000031c:	e7fe      	b.n	2000031c <BrownOut_1_5V_IRQHandler>
+
+2000031e <BrownOut_3_3V_IRQHandler>:
+2000031e:	e7fe      	b.n	2000031e <BrownOut_3_3V_IRQHandler>
+
+20000320 <RTC_Match_IRQHandler>:
+20000320:	e7fe      	b.n	20000320 <RTC_Match_IRQHandler>
+
+20000322 <RTCIF_Pub_IRQHandler>:
+20000322:	e7fe      	b.n	20000322 <RTCIF_Pub_IRQHandler>
+
+20000324 <EthernetMAC_IRQHandler>:
+20000324:	e7fe      	b.n	20000324 <EthernetMAC_IRQHandler>
+
+20000326 <IAP_IRQHandler>:
+20000326:	e7fe      	b.n	20000326 <IAP_IRQHandler>
+
+20000328 <ENVM0_IRQHandler>:
+20000328:	e7fe      	b.n	20000328 <ENVM0_IRQHandler>
+
+2000032a <ENVM1_IRQHandler>:
+2000032a:	e7fe      	b.n	2000032a <ENVM1_IRQHandler>
+
+2000032c <DMA_IRQHandler>:
+2000032c:	e7fe      	b.n	2000032c <DMA_IRQHandler>
+
+2000032e <UART0_IRQHandler>:
+2000032e:	e7fe      	b.n	2000032e <UART0_IRQHandler>
+
+20000330 <UART1_IRQHandler>:
+20000330:	e7fe      	b.n	20000330 <UART1_IRQHandler>
+
+20000332 <SPI0_IRQHandler>:
+20000332:	e7fe      	b.n	20000332 <SPI0_IRQHandler>
+
+20000334 <SPI1_IRQHandler>:
+20000334:	e7fe      	b.n	20000334 <SPI1_IRQHandler>
+
+20000336 <I2C0_IRQHandler>:
+20000336:	e7fe      	b.n	20000336 <I2C0_IRQHandler>
+
+20000338 <I2C0_SMBAlert_IRQHandler>:
+20000338:	e7fe      	b.n	20000338 <I2C0_SMBAlert_IRQHandler>
+
+2000033a <I2C0_SMBus_IRQHandler>:
+2000033a:	e7fe      	b.n	2000033a <I2C0_SMBus_IRQHandler>
+
+2000033c <I2C1_IRQHandler>:
+2000033c:	e7fe      	b.n	2000033c <I2C1_IRQHandler>
+
+2000033e <I2C1_SMBAlert_IRQHandler>:
+2000033e:	e7fe      	b.n	2000033e <I2C1_SMBAlert_IRQHandler>
+
+20000340 <I2C1_SMBus_IRQHandler>:
+20000340:	e7fe      	b.n	20000340 <I2C1_SMBus_IRQHandler>
+
+20000342 <Timer1_IRQHandler>:
+20000342:	e7fe      	b.n	20000342 <Timer1_IRQHandler>
+
+20000344 <Timer2_IRQHandler>:
+20000344:	e7fe      	b.n	20000344 <Timer2_IRQHandler>
+
+20000346 <PLL_Lock_IRQHandler>:
+20000346:	e7fe      	b.n	20000346 <PLL_Lock_IRQHandler>
+
+20000348 <PLL_LockLost_IRQHandler>:
+20000348:	e7fe      	b.n	20000348 <PLL_LockLost_IRQHandler>
+
+2000034a <CommError_IRQHandler>:
+2000034a:	e7fe      	b.n	2000034a <CommError_IRQHandler>
+
+2000034c <Fabric_IRQHandler>:
+2000034c:	e7fe      	b.n	2000034c <Fabric_IRQHandler>
+
+2000034e <GPIO0_IRQHandler>:
+2000034e:	e7fe      	b.n	2000034e <GPIO0_IRQHandler>
+
+20000350 <GPIO1_IRQHandler>:
+20000350:	e7fe      	b.n	20000350 <GPIO1_IRQHandler>
+
+20000352 <GPIO2_IRQHandler>:
+20000352:	e7fe      	b.n	20000352 <GPIO2_IRQHandler>
+
+20000354 <GPIO3_IRQHandler>:
+20000354:	e7fe      	b.n	20000354 <GPIO3_IRQHandler>
+
+20000356 <GPIO4_IRQHandler>:
+20000356:	e7fe      	b.n	20000356 <GPIO4_IRQHandler>
+
+20000358 <GPIO5_IRQHandler>:
+20000358:	e7fe      	b.n	20000358 <GPIO5_IRQHandler>
+
+2000035a <GPIO6_IRQHandler>:
+2000035a:	e7fe      	b.n	2000035a <GPIO6_IRQHandler>
+
+2000035c <GPIO7_IRQHandler>:
+2000035c:	e7fe      	b.n	2000035c <GPIO7_IRQHandler>
+
+2000035e <GPIO8_IRQHandler>:
+2000035e:	e7fe      	b.n	2000035e <GPIO8_IRQHandler>
+
+20000360 <GPIO9_IRQHandler>:
+20000360:	e7fe      	b.n	20000360 <GPIO9_IRQHandler>
+
+20000362 <GPIO10_IRQHandler>:
+20000362:	e7fe      	b.n	20000362 <GPIO10_IRQHandler>
+
+20000364 <GPIO11_IRQHandler>:
+20000364:	e7fe      	b.n	20000364 <GPIO11_IRQHandler>
+
+20000366 <GPIO12_IRQHandler>:
+20000366:	e7fe      	b.n	20000366 <GPIO12_IRQHandler>
+
+20000368 <GPIO13_IRQHandler>:
+20000368:	e7fe      	b.n	20000368 <GPIO13_IRQHandler>
+
+2000036a <GPIO14_IRQHandler>:
+2000036a:	e7fe      	b.n	2000036a <GPIO14_IRQHandler>
+
+2000036c <GPIO15_IRQHandler>:
+2000036c:	e7fe      	b.n	2000036c <GPIO15_IRQHandler>
+
+2000036e <GPIO16_IRQHandler>:
+2000036e:	e7fe      	b.n	2000036e <GPIO16_IRQHandler>
+
+20000370 <GPIO17_IRQHandler>:
+20000370:	e7fe      	b.n	20000370 <GPIO17_IRQHandler>
+
+20000372 <GPIO18_IRQHandler>:
+20000372:	e7fe      	b.n	20000372 <GPIO18_IRQHandler>
+
+20000374 <GPIO19_IRQHandler>:
+20000374:	e7fe      	b.n	20000374 <GPIO19_IRQHandler>
+
+20000376 <GPIO20_IRQHandler>:
+20000376:	e7fe      	b.n	20000376 <GPIO20_IRQHandler>
+
+20000378 <GPIO21_IRQHandler>:
+20000378:	e7fe      	b.n	20000378 <GPIO21_IRQHandler>
+
+2000037a <GPIO22_IRQHandler>:
+2000037a:	e7fe      	b.n	2000037a <GPIO22_IRQHandler>
+
+2000037c <GPIO23_IRQHandler>:
+2000037c:	e7fe      	b.n	2000037c <GPIO23_IRQHandler>
+
+2000037e <GPIO24_IRQHandler>:
+2000037e:	e7fe      	b.n	2000037e <GPIO24_IRQHandler>
+
+20000380 <GPIO25_IRQHandler>:
+20000380:	e7fe      	b.n	20000380 <GPIO25_IRQHandler>
+
+20000382 <GPIO26_IRQHandler>:
+20000382:	e7fe      	b.n	20000382 <GPIO26_IRQHandler>
+
+20000384 <GPIO27_IRQHandler>:
+20000384:	e7fe      	b.n	20000384 <GPIO27_IRQHandler>
+
+20000386 <GPIO28_IRQHandler>:
+20000386:	e7fe      	b.n	20000386 <GPIO28_IRQHandler>
+
+20000388 <GPIO29_IRQHandler>:
+20000388:	e7fe      	b.n	20000388 <GPIO29_IRQHandler>
+
+2000038a <GPIO30_IRQHandler>:
+2000038a:	e7fe      	b.n	2000038a <GPIO30_IRQHandler>
+
+2000038c <GPIO31_IRQHandler>:
+2000038c:	e7fe      	b.n	2000038c <GPIO31_IRQHandler>
+
+2000038e <ACE_PC0_Flag0_IRQHandler>:
+2000038e:	e7fe      	b.n	2000038e <ACE_PC0_Flag0_IRQHandler>
+
+20000390 <ACE_PC0_Flag1_IRQHandler>:
+20000390:	e7fe      	b.n	20000390 <ACE_PC0_Flag1_IRQHandler>
+
+20000392 <ACE_PC0_Flag2_IRQHandler>:
+20000392:	e7fe      	b.n	20000392 <ACE_PC0_Flag2_IRQHandler>
+
+20000394 <ACE_PC0_Flag3_IRQHandler>:
+20000394:	e7fe      	b.n	20000394 <ACE_PC0_Flag3_IRQHandler>
+
+20000396 <ACE_PC1_Flag0_IRQHandler>:
+20000396:	e7fe      	b.n	20000396 <ACE_PC1_Flag0_IRQHandler>
+
+20000398 <ACE_PC1_Flag1_IRQHandler>:
+20000398:	e7fe      	b.n	20000398 <ACE_PC1_Flag1_IRQHandler>
+
+2000039a <ACE_PC1_Flag2_IRQHandler>:
+2000039a:	e7fe      	b.n	2000039a <ACE_PC1_Flag2_IRQHandler>
+
+2000039c <ACE_PC1_Flag3_IRQHandler>:
+2000039c:	e7fe      	b.n	2000039c <ACE_PC1_Flag3_IRQHandler>
+
+2000039e <ACE_PC2_Flag0_IRQHandler>:
+2000039e:	e7fe      	b.n	2000039e <ACE_PC2_Flag0_IRQHandler>
+
+200003a0 <ACE_PC2_Flag1_IRQHandler>:
+200003a0:	e7fe      	b.n	200003a0 <ACE_PC2_Flag1_IRQHandler>
+
+200003a2 <ACE_PC2_Flag2_IRQHandler>:
+200003a2:	e7fe      	b.n	200003a2 <ACE_PC2_Flag2_IRQHandler>
+
+200003a4 <ACE_PC2_Flag3_IRQHandler>:
+200003a4:	e7fe      	b.n	200003a4 <ACE_PC2_Flag3_IRQHandler>
+
+200003a6 <ACE_ADC0_DataValid_IRQHandler>:
+200003a6:	e7fe      	b.n	200003a6 <ACE_ADC0_DataValid_IRQHandler>
+
+200003a8 <ACE_ADC1_DataValid_IRQHandler>:
+200003a8:	e7fe      	b.n	200003a8 <ACE_ADC1_DataValid_IRQHandler>
+
+200003aa <ACE_ADC2_DataValid_IRQHandler>:
+200003aa:	e7fe      	b.n	200003aa <ACE_ADC2_DataValid_IRQHandler>
+
+200003ac <ACE_ADC0_CalDone_IRQHandler>:
+200003ac:	e7fe      	b.n	200003ac <ACE_ADC0_CalDone_IRQHandler>
+
+200003ae <ACE_ADC1_CalDone_IRQHandler>:
+200003ae:	e7fe      	b.n	200003ae <ACE_ADC1_CalDone_IRQHandler>
+
+200003b0 <ACE_ADC2_CalDone_IRQHandler>:
+200003b0:	e7fe      	b.n	200003b0 <ACE_ADC2_CalDone_IRQHandler>
+
+200003b2 <ACE_ADC0_CalStart_IRQHandler>:
+200003b2:	e7fe      	b.n	200003b2 <ACE_ADC0_CalStart_IRQHandler>
+
+200003b4 <ACE_ADC1_CalStart_IRQHandler>:
+200003b4:	e7fe      	b.n	200003b4 <ACE_ADC1_CalStart_IRQHandler>
+
+200003b6 <ACE_ADC2_CalStart_IRQHandler>:
+200003b6:	e7fe      	b.n	200003b6 <ACE_ADC2_CalStart_IRQHandler>
+
+200003b8 <ACE_Comp0_Fall_IRQHandler>:
+200003b8:	e7fe      	b.n	200003b8 <ACE_Comp0_Fall_IRQHandler>
+
+200003ba <ACE_Comp1_Fall_IRQHandler>:
+200003ba:	e7fe      	b.n	200003ba <ACE_Comp1_Fall_IRQHandler>
+
+200003bc <ACE_Comp2_Fall_IRQHandler>:
+200003bc:	e7fe      	b.n	200003bc <ACE_Comp2_Fall_IRQHandler>
+
+200003be <ACE_Comp3_Fall_IRQHandler>:
+200003be:	e7fe      	b.n	200003be <ACE_Comp3_Fall_IRQHandler>
+
+200003c0 <ACE_Comp4_Fall_IRQHandler>:
+200003c0:	e7fe      	b.n	200003c0 <ACE_Comp4_Fall_IRQHandler>
+
+200003c2 <ACE_Comp5_Fall_IRQHandler>:
+200003c2:	e7fe      	b.n	200003c2 <ACE_Comp5_Fall_IRQHandler>
+
+200003c4 <ACE_Comp6_Fall_IRQHandler>:
+200003c4:	e7fe      	b.n	200003c4 <ACE_Comp6_Fall_IRQHandler>
+
+200003c6 <ACE_Comp7_Fall_IRQHandler>:
+200003c6:	e7fe      	b.n	200003c6 <ACE_Comp7_Fall_IRQHandler>
+
+200003c8 <ACE_Comp8_Fall_IRQHandler>:
+200003c8:	e7fe      	b.n	200003c8 <ACE_Comp8_Fall_IRQHandler>
+
+200003ca <ACE_Comp9_Fall_IRQHandler>:
+200003ca:	e7fe      	b.n	200003ca <ACE_Comp9_Fall_IRQHandler>
+
+200003cc <ACE_Comp10_Fall_IRQHandler>:
+200003cc:	e7fe      	b.n	200003cc <ACE_Comp10_Fall_IRQHandler>
+
+200003ce <ACE_Comp11_Fall_IRQHandler>:
+200003ce:	e7fe      	b.n	200003ce <ACE_Comp11_Fall_IRQHandler>
+
+200003d0 <ACE_Comp0_Rise_IRQHandler>:
+200003d0:	e7fe      	b.n	200003d0 <ACE_Comp0_Rise_IRQHandler>
+
+200003d2 <ACE_Comp1_Rise_IRQHandler>:
+200003d2:	e7fe      	b.n	200003d2 <ACE_Comp1_Rise_IRQHandler>
+
+200003d4 <ACE_Comp2_Rise_IRQHandler>:
+200003d4:	e7fe      	b.n	200003d4 <ACE_Comp2_Rise_IRQHandler>
+
+200003d6 <ACE_Comp3_Rise_IRQHandler>:
+200003d6:	e7fe      	b.n	200003d6 <ACE_Comp3_Rise_IRQHandler>
+
+200003d8 <ACE_Comp4_Rise_IRQHandler>:
+200003d8:	e7fe      	b.n	200003d8 <ACE_Comp4_Rise_IRQHandler>
+
+200003da <ACE_Comp5_Rise_IRQHandler>:
+200003da:	e7fe      	b.n	200003da <ACE_Comp5_Rise_IRQHandler>
+
+200003dc <ACE_Comp6_Rise_IRQHandler>:
+200003dc:	e7fe      	b.n	200003dc <ACE_Comp6_Rise_IRQHandler>
+
+200003de <ACE_Comp7_Rise_IRQHandler>:
+200003de:	e7fe      	b.n	200003de <ACE_Comp7_Rise_IRQHandler>
+
+200003e0 <ACE_Comp8_Rise_IRQHandler>:
+200003e0:	e7fe      	b.n	200003e0 <ACE_Comp8_Rise_IRQHandler>
+
+200003e2 <ACE_Comp9_Rise_IRQHandler>:
+200003e2:	e7fe      	b.n	200003e2 <ACE_Comp9_Rise_IRQHandler>
+
+200003e4 <ACE_Comp10_Rise_IRQHandler>:
+200003e4:	e7fe      	b.n	200003e4 <ACE_Comp10_Rise_IRQHandler>
+
+200003e6 <ACE_Comp11_Rise_IRQHandler>:
+200003e6:	e7fe      	b.n	200003e6 <ACE_Comp11_Rise_IRQHandler>
+
+200003e8 <ACE_ADC0_FifoFull_IRQHandler>:
+200003e8:	e7fe      	b.n	200003e8 <ACE_ADC0_FifoFull_IRQHandler>
+
+200003ea <ACE_ADC0_FifoAFull_IRQHandler>:
+200003ea:	e7fe      	b.n	200003ea <ACE_ADC0_FifoAFull_IRQHandler>
+
+200003ec <ACE_ADC0_FifoEmpty_IRQHandler>:
+200003ec:	e7fe      	b.n	200003ec <ACE_ADC0_FifoEmpty_IRQHandler>
+
+200003ee <ACE_ADC1_FifoFull_IRQHandler>:
+200003ee:	e7fe      	b.n	200003ee <ACE_ADC1_FifoFull_IRQHandler>
+
+200003f0 <ACE_ADC1_FifoAFull_IRQHandler>:
+200003f0:	e7fe      	b.n	200003f0 <ACE_ADC1_FifoAFull_IRQHandler>
+
+200003f2 <ACE_ADC1_FifoEmpty_IRQHandler>:
+200003f2:	e7fe      	b.n	200003f2 <ACE_ADC1_FifoEmpty_IRQHandler>
+
+200003f4 <ACE_ADC2_FifoFull_IRQHandler>:
+200003f4:	e7fe      	b.n	200003f4 <ACE_ADC2_FifoFull_IRQHandler>
+
+200003f6 <ACE_ADC2_FifoAFull_IRQHandler>:
+200003f6:	e7fe      	b.n	200003f6 <ACE_ADC2_FifoAFull_IRQHandler>
+
+200003f8 <ACE_ADC2_FifoEmpty_IRQHandler>:
+200003f8:	e7fe      	b.n	200003f8 <ACE_ADC2_FifoEmpty_IRQHandler>
+
+200003fa <ACE_PPE_Flag0_IRQHandler>:
+200003fa:	e7fe      	b.n	200003fa <ACE_PPE_Flag0_IRQHandler>
+
+200003fc <ACE_PPE_Flag1_IRQHandler>:
+200003fc:	e7fe      	b.n	200003fc <ACE_PPE_Flag1_IRQHandler>
+
+200003fe <ACE_PPE_Flag2_IRQHandler>:
+200003fe:	e7fe      	b.n	200003fe <ACE_PPE_Flag2_IRQHandler>
+
+20000400 <ACE_PPE_Flag3_IRQHandler>:
+20000400:	e7fe      	b.n	20000400 <ACE_PPE_Flag3_IRQHandler>
+
+20000402 <ACE_PPE_Flag4_IRQHandler>:
+20000402:	e7fe      	b.n	20000402 <ACE_PPE_Flag4_IRQHandler>
+
+20000404 <ACE_PPE_Flag5_IRQHandler>:
+20000404:	e7fe      	b.n	20000404 <ACE_PPE_Flag5_IRQHandler>
+
+20000406 <ACE_PPE_Flag6_IRQHandler>:
+20000406:	e7fe      	b.n	20000406 <ACE_PPE_Flag6_IRQHandler>
+
+20000408 <ACE_PPE_Flag7_IRQHandler>:
+20000408:	e7fe      	b.n	20000408 <ACE_PPE_Flag7_IRQHandler>
+
+2000040a <ACE_PPE_Flag8_IRQHandler>:
+2000040a:	e7fe      	b.n	2000040a <ACE_PPE_Flag8_IRQHandler>
+
+2000040c <ACE_PPE_Flag9_IRQHandler>:
+2000040c:	e7fe      	b.n	2000040c <ACE_PPE_Flag9_IRQHandler>
+
+2000040e <ACE_PPE_Flag10_IRQHandler>:
+2000040e:	e7fe      	b.n	2000040e <ACE_PPE_Flag10_IRQHandler>
+
+20000410 <ACE_PPE_Flag11_IRQHandler>:
+20000410:	e7fe      	b.n	20000410 <ACE_PPE_Flag11_IRQHandler>
+
+20000412 <ACE_PPE_Flag12_IRQHandler>:
+20000412:	e7fe      	b.n	20000412 <ACE_PPE_Flag12_IRQHandler>
+
+20000414 <ACE_PPE_Flag13_IRQHandler>:
+20000414:	e7fe      	b.n	20000414 <ACE_PPE_Flag13_IRQHandler>
+
+20000416 <ACE_PPE_Flag14_IRQHandler>:
+20000416:	e7fe      	b.n	20000416 <ACE_PPE_Flag14_IRQHandler>
+
+20000418 <ACE_PPE_Flag15_IRQHandler>:
+20000418:	e7fe      	b.n	20000418 <ACE_PPE_Flag15_IRQHandler>
+
+2000041a <ACE_PPE_Flag16_IRQHandler>:
+2000041a:	e7fe      	b.n	2000041a <ACE_PPE_Flag16_IRQHandler>
+
+2000041c <ACE_PPE_Flag17_IRQHandler>:
+2000041c:	e7fe      	b.n	2000041c <ACE_PPE_Flag17_IRQHandler>
+
+2000041e <ACE_PPE_Flag18_IRQHandler>:
+2000041e:	e7fe      	b.n	2000041e <ACE_PPE_Flag18_IRQHandler>
+
+20000420 <ACE_PPE_Flag19_IRQHandler>:
+20000420:	e7fe      	b.n	20000420 <ACE_PPE_Flag19_IRQHandler>
+
+20000422 <ACE_PPE_Flag20_IRQHandler>:
+20000422:	e7fe      	b.n	20000422 <ACE_PPE_Flag20_IRQHandler>
+
+20000424 <ACE_PPE_Flag21_IRQHandler>:
+20000424:	e7fe      	b.n	20000424 <ACE_PPE_Flag21_IRQHandler>
+
+20000426 <ACE_PPE_Flag22_IRQHandler>:
+20000426:	e7fe      	b.n	20000426 <ACE_PPE_Flag22_IRQHandler>
+
+20000428 <ACE_PPE_Flag23_IRQHandler>:
+20000428:	e7fe      	b.n	20000428 <ACE_PPE_Flag23_IRQHandler>
+
+2000042a <ACE_PPE_Flag24_IRQHandler>:
+2000042a:	e7fe      	b.n	2000042a <ACE_PPE_Flag24_IRQHandler>
+
+2000042c <ACE_PPE_Flag25_IRQHandler>:
+2000042c:	e7fe      	b.n	2000042c <ACE_PPE_Flag25_IRQHandler>
+
+2000042e <ACE_PPE_Flag26_IRQHandler>:
+2000042e:	e7fe      	b.n	2000042e <ACE_PPE_Flag26_IRQHandler>
+
+20000430 <ACE_PPE_Flag27_IRQHandler>:
+20000430:	e7fe      	b.n	20000430 <ACE_PPE_Flag27_IRQHandler>
+
+20000432 <ACE_PPE_Flag28_IRQHandler>:
+20000432:	e7fe      	b.n	20000432 <ACE_PPE_Flag28_IRQHandler>
+
+20000434 <ACE_PPE_Flag29_IRQHandler>:
+20000434:	e7fe      	b.n	20000434 <ACE_PPE_Flag29_IRQHandler>
+
+20000436 <ACE_PPE_Flag30_IRQHandler>:
+20000436:	e7fe      	b.n	20000436 <ACE_PPE_Flag30_IRQHandler>
+
+20000438 <ACE_PPE_Flag31_IRQHandler>:
+20000438:	e7fe      	b.n	20000438 <ACE_PPE_Flag31_IRQHandler>
+2000043a:	0000      	.short	0x0000
+2000043c:	20000745 	.word	0x20000745
+20000440:	00000000 	.word	0x00000000
+20000444:	20000000 	.word	0x20000000
+20000448:	20000000 	.word	0x20000000
+2000044c:	200007c8 	.word	0x200007c8
+20000450:	200007c8 	.word	0x200007c8
+20000454:	200007c8 	.word	0x200007c8
+20000458:	200007cc 	.word	0x200007cc
+2000045c:	00000000 	.word	0x00000000
+20000460:	200007cc 	.word	0x200007cc
+20000464:	200007d0 	.word	0x200007d0
+20000468:	20000751 	.word	0x20000751
+2000046c:	2000068d 	.word	0x2000068d
+
+20000470 <__do_global_dtors_aux>:
+20000470:	f240 73cc 	movw	r3, #1996	; 0x7cc
+20000474:	f2c2 0300 	movt	r3, #8192	; 0x2000
+20000478:	781a      	ldrb	r2, [r3, #0]
+2000047a:	b90a      	cbnz	r2, 20000480 <__do_global_dtors_aux+0x10>
+2000047c:	2001      	movs	r0, #1
+2000047e:	7018      	strb	r0, [r3, #0]
+20000480:	4770      	bx	lr
+20000482:	bf00      	nop
+
+20000484 <frame_dummy>:
+20000484:	f240 70c8 	movw	r0, #1992	; 0x7c8
+20000488:	f2c2 0000 	movt	r0, #8192	; 0x2000
+2000048c:	b508      	push	{r3, lr}
+2000048e:	6803      	ldr	r3, [r0, #0]
+20000490:	b12b      	cbz	r3, 2000049e <frame_dummy+0x1a>
+20000492:	f240 0300 	movw	r3, #0
+20000496:	f2c0 0300 	movt	r3, #0
+2000049a:	b103      	cbz	r3, 2000049e <frame_dummy+0x1a>
+2000049c:	4798      	blx	r3
+2000049e:	bd08      	pop	{r3, pc}
+
+200004a0 <initCar>:
+#define MOTOR_CONTROLLER_ADDR 0x40050000
+
+static const int DUTY_RANGE = 50;
+static const int DUTY_MIN = 40;
+
+void initCar() {
+200004a0:	b580      	push	{r7, lr}
+200004a2:	af00      	add	r7, sp, #0
+	stopCar();
+200004a4:	f000 f802 	bl	200004ac <stopCar>
+}
+200004a8:	bd80      	pop	{r7, pc}
+200004aa:	bf00      	nop
+
+200004ac <stopCar>:
+
+void stopCar() {
+200004ac:	b580      	push	{r7, lr}
+200004ae:	af00      	add	r7, sp, #0
+	moveCar(true, true, 0, 0);
+200004b0:	f04f 0001 	mov.w	r0, #1
+200004b4:	f04f 0101 	mov.w	r1, #1
+200004b8:	f04f 0200 	mov.w	r2, #0
+200004bc:	f04f 0300 	mov.w	r3, #0
+200004c0:	f000 f86e 	bl	200005a0 <moveCar>
+}
+200004c4:	bd80      	pop	{r7, pc}
+200004c6:	bf00      	nop
+
+200004c8 <moveCarForward>:
+
+void moveCarForward(int speed) {
+200004c8:	b580      	push	{r7, lr}
+200004ca:	b082      	sub	sp, #8
+200004cc:	af00      	add	r7, sp, #0
+200004ce:	6078      	str	r0, [r7, #4]
+	moveCar(true, true, speed, speed);
+200004d0:	f04f 0001 	mov.w	r0, #1
+200004d4:	f04f 0101 	mov.w	r1, #1
+200004d8:	687a      	ldr	r2, [r7, #4]
+200004da:	687b      	ldr	r3, [r7, #4]
+200004dc:	f000 f860 	bl	200005a0 <moveCar>
+}
+200004e0:	f107 0708 	add.w	r7, r7, #8
+200004e4:	46bd      	mov	sp, r7
+200004e6:	bd80      	pop	{r7, pc}
+
+200004e8 <moveCarReverse>:
+
+void moveCarReverse(int speed) {
+200004e8:	b580      	push	{r7, lr}
+200004ea:	b082      	sub	sp, #8
+200004ec:	af00      	add	r7, sp, #0
+200004ee:	6078      	str	r0, [r7, #4]
+	moveCar(false, false, speed, speed);
+200004f0:	f04f 0000 	mov.w	r0, #0
+200004f4:	f04f 0100 	mov.w	r1, #0
+200004f8:	687a      	ldr	r2, [r7, #4]
+200004fa:	687b      	ldr	r3, [r7, #4]
+200004fc:	f000 f850 	bl	200005a0 <moveCar>
+}
+20000500:	f107 0708 	add.w	r7, r7, #8
+20000504:	46bd      	mov	sp, r7
+20000506:	bd80      	pop	{r7, pc}
+
+20000508 <rotateCarRight>:
+
+void rotateCarRight(int speed) {
+20000508:	b580      	push	{r7, lr}
+2000050a:	b082      	sub	sp, #8
+2000050c:	af00      	add	r7, sp, #0
+2000050e:	6078      	str	r0, [r7, #4]
+	moveCar(true, false, speed, speed);
+20000510:	f04f 0001 	mov.w	r0, #1
+20000514:	f04f 0100 	mov.w	r1, #0
+20000518:	687a      	ldr	r2, [r7, #4]
+2000051a:	687b      	ldr	r3, [r7, #4]
+2000051c:	f000 f840 	bl	200005a0 <moveCar>
+}
+20000520:	f107 0708 	add.w	r7, r7, #8
+20000524:	46bd      	mov	sp, r7
+20000526:	bd80      	pop	{r7, pc}
+
+20000528 <rotateCarLeft>:
+
+void rotateCarLeft(int speed) {
+20000528:	b580      	push	{r7, lr}
+2000052a:	b082      	sub	sp, #8
+2000052c:	af00      	add	r7, sp, #0
+2000052e:	6078      	str	r0, [r7, #4]
+	moveCar(false, true, speed, speed);
+20000530:	f04f 0000 	mov.w	r0, #0
+20000534:	f04f 0101 	mov.w	r1, #1
+20000538:	687a      	ldr	r2, [r7, #4]
+2000053a:	687b      	ldr	r3, [r7, #4]
+2000053c:	f000 f830 	bl	200005a0 <moveCar>
+}
+20000540:	f107 0708 	add.w	r7, r7, #8
+20000544:	46bd      	mov	sp, r7
+20000546:	bd80      	pop	{r7, pc}
+
+20000548 <turnCarRight>:
+
+void turnCarRight(int speed) {
+20000548:	b580      	push	{r7, lr}
+2000054a:	b082      	sub	sp, #8
+2000054c:	af00      	add	r7, sp, #0
+2000054e:	6078      	str	r0, [r7, #4]
+	moveCar(true, true, speed, speed / 2);
+20000550:	687b      	ldr	r3, [r7, #4]
+20000552:	ea4f 72d3 	mov.w	r2, r3, lsr #31
+20000556:	4413      	add	r3, r2
+20000558:	ea4f 0363 	mov.w	r3, r3, asr #1
+2000055c:	f04f 0001 	mov.w	r0, #1
+20000560:	f04f 0101 	mov.w	r1, #1
+20000564:	687a      	ldr	r2, [r7, #4]
+20000566:	f000 f81b 	bl	200005a0 <moveCar>
+}
+2000056a:	f107 0708 	add.w	r7, r7, #8
+2000056e:	46bd      	mov	sp, r7
+20000570:	bd80      	pop	{r7, pc}
+20000572:	bf00      	nop
+
+20000574 <turnCarLeft>:
+
+void turnCarLeft(int speed) {
+20000574:	b580      	push	{r7, lr}
+20000576:	b082      	sub	sp, #8
+20000578:	af00      	add	r7, sp, #0
+2000057a:	6078      	str	r0, [r7, #4]
+	moveCar(true, true, speed / 2, speed);
+2000057c:	687b      	ldr	r3, [r7, #4]
+2000057e:	ea4f 72d3 	mov.w	r2, r3, lsr #31
+20000582:	4413      	add	r3, r2
+20000584:	ea4f 0363 	mov.w	r3, r3, asr #1
+20000588:	f04f 0001 	mov.w	r0, #1
+2000058c:	f04f 0101 	mov.w	r1, #1
+20000590:	461a      	mov	r2, r3
+20000592:	687b      	ldr	r3, [r7, #4]
+20000594:	f000 f804 	bl	200005a0 <moveCar>
+}
+20000598:	f107 0708 	add.w	r7, r7, #8
+2000059c:	46bd      	mov	sp, r7
+2000059e:	bd80      	pop	{r7, pc}
+
+200005a0 <moveCar>:
+
+void moveCar(bool leftFwd, bool rightFwd, int leftSpeed, int rightSpeed) {
+200005a0:	b480      	push	{r7}
+200005a2:	b089      	sub	sp, #36	; 0x24
+200005a4:	af00      	add	r7, sp, #0
+200005a6:	60ba      	str	r2, [r7, #8]
+200005a8:	607b      	str	r3, [r7, #4]
+200005aa:	4603      	mov	r3, r0
+200005ac:	73fb      	strb	r3, [r7, #15]
+200005ae:	460b      	mov	r3, r1
+200005b0:	73bb      	strb	r3, [r7, #14]
+	uint32_t *addr = (uint32_t*)MOTOR_CONTROLLER_ADDR;
+200005b2:	f240 0300 	movw	r3, #0
+200005b6:	f2c4 0305 	movt	r3, #16389	; 0x4005
+200005ba:	613b      	str	r3, [r7, #16]
+	uint32_t data = 0;
+200005bc:	f04f 0300 	mov.w	r3, #0
+200005c0:	617b      	str	r3, [r7, #20]
+
+	int leftDuty = 0;
+200005c2:	f04f 0300 	mov.w	r3, #0
+200005c6:	61bb      	str	r3, [r7, #24]
+	int rightDuty = 0;
+200005c8:	f04f 0300 	mov.w	r3, #0
+200005cc:	61fb      	str	r3, [r7, #28]
+
+	if (leftSpeed) {
+200005ce:	68bb      	ldr	r3, [r7, #8]
+200005d0:	2b00      	cmp	r3, #0
+200005d2:	d01a      	beq.n	2000060a <moveCar+0x6a>
+		leftDuty = leftSpeed * DUTY_RANGE / 100 + DUTY_MIN;		// percentage of duty range, offset by minimum duty cycle
+200005d4:	f240 73a0 	movw	r3, #1952	; 0x7a0
+200005d8:	f2c2 0300 	movt	r3, #8192	; 0x2000
+200005dc:	681b      	ldr	r3, [r3, #0]
+200005de:	68ba      	ldr	r2, [r7, #8]
+200005e0:	fb02 f203 	mul.w	r2, r2, r3
+200005e4:	f248 531f 	movw	r3, #34079	; 0x851f
+200005e8:	f2c5 13eb 	movt	r3, #20971	; 0x51eb
+200005ec:	fb83 1302 	smull	r1, r3, r3, r2
+200005f0:	ea4f 1163 	mov.w	r1, r3, asr #5
+200005f4:	ea4f 73e2 	mov.w	r3, r2, asr #31
+200005f8:	ebc3 0201 	rsb	r2, r3, r1
+200005fc:	f240 73a4 	movw	r3, #1956	; 0x7a4
+20000600:	f2c2 0300 	movt	r3, #8192	; 0x2000
+20000604:	681b      	ldr	r3, [r3, #0]
+20000606:	4413      	add	r3, r2
+20000608:	61bb      	str	r3, [r7, #24]
+	}
+	if (rightSpeed) {
+2000060a:	687b      	ldr	r3, [r7, #4]
+2000060c:	2b00      	cmp	r3, #0
+2000060e:	d01a      	beq.n	20000646 <moveCar+0xa6>
+		rightDuty = rightSpeed * DUTY_RANGE / 100 + DUTY_MIN;
+20000610:	f240 73a0 	movw	r3, #1952	; 0x7a0
+20000614:	f2c2 0300 	movt	r3, #8192	; 0x2000
+20000618:	681b      	ldr	r3, [r3, #0]
+2000061a:	687a      	ldr	r2, [r7, #4]
+2000061c:	fb02 f203 	mul.w	r2, r2, r3
+20000620:	f248 531f 	movw	r3, #34079	; 0x851f
+20000624:	f2c5 13eb 	movt	r3, #20971	; 0x51eb
+20000628:	fb83 1302 	smull	r1, r3, r3, r2
+2000062c:	ea4f 1163 	mov.w	r1, r3, asr #5
+20000630:	ea4f 73e2 	mov.w	r3, r2, asr #31
+20000634:	ebc3 0201 	rsb	r2, r3, r1
+20000638:	f240 73a4 	movw	r3, #1956	; 0x7a4
+2000063c:	f2c2 0300 	movt	r3, #8192	; 0x2000
+20000640:	681b      	ldr	r3, [r3, #0]
+20000642:	4413      	add	r3, r2
+20000644:	61fb      	str	r3, [r7, #28]
+	}
+
+	data ^= rightFwd;
+20000646:	7bbb      	ldrb	r3, [r7, #14]
+20000648:	697a      	ldr	r2, [r7, #20]
+2000064a:	ea82 0303 	eor.w	r3, r2, r3
+2000064e:	617b      	str	r3, [r7, #20]
+	data ^= leftFwd << 1;
+20000650:	7bfb      	ldrb	r3, [r7, #15]
+20000652:	ea4f 0343 	mov.w	r3, r3, lsl #1
+20000656:	697a      	ldr	r2, [r7, #20]
+20000658:	ea82 0303 	eor.w	r3, r2, r3
+2000065c:	617b      	str	r3, [r7, #20]
+
+	data ^= rightDuty << 2;
+2000065e:	69fb      	ldr	r3, [r7, #28]
+20000660:	ea4f 0383 	mov.w	r3, r3, lsl #2
+20000664:	697a      	ldr	r2, [r7, #20]
+20000666:	ea82 0303 	eor.w	r3, r2, r3
+2000066a:	617b      	str	r3, [r7, #20]
+	data ^= leftDuty << 9;
+2000066c:	69bb      	ldr	r3, [r7, #24]
+2000066e:	ea4f 2343 	mov.w	r3, r3, lsl #9
+20000672:	697a      	ldr	r2, [r7, #20]
+20000674:	ea82 0303 	eor.w	r3, r2, r3
+20000678:	617b      	str	r3, [r7, #20]
+
+	*addr = data;
+2000067a:	693b      	ldr	r3, [r7, #16]
+2000067c:	697a      	ldr	r2, [r7, #20]
+2000067e:	601a      	str	r2, [r3, #0]
+}
+20000680:	f107 0724 	add.w	r7, r7, #36	; 0x24
+20000684:	46bd      	mov	sp, r7
+20000686:	bc80      	pop	{r7}
+20000688:	4770      	bx	lr
+2000068a:	bf00      	nop
+
+2000068c <main>:
+#include "bool.h"
+
+#include "car.h"
+
+int main()
+{
+2000068c:	b580      	push	{r7, lr}
+2000068e:	b082      	sub	sp, #8
+20000690:	af00      	add	r7, sp, #0
+	initCar();
+20000692:	f7ff ff05 	bl	200004a0 <initCar>
+
+	// CAR DEMO
+
+	int count = 0;
+20000696:	f04f 0300 	mov.w	r3, #0
+2000069a:	603b      	str	r3, [r7, #0]
+	int cycle = 0;
+2000069c:	f04f 0300 	mov.w	r3, #0
+200006a0:	607b      	str	r3, [r7, #4]
+	while( 1 )
+	{
+		if (count++ >= 2000000) {
+200006a2:	683a      	ldr	r2, [r7, #0]
+200006a4:	f248 437f 	movw	r3, #33919	; 0x847f
+200006a8:	f2c0 031e 	movt	r3, #30
+200006ac:	429a      	cmp	r2, r3
+200006ae:	bfd4      	ite	le
+200006b0:	2300      	movle	r3, #0
+200006b2:	2301      	movgt	r3, #1
+200006b4:	b2db      	uxtb	r3, r3
+200006b6:	683a      	ldr	r2, [r7, #0]
+200006b8:	f102 0201 	add.w	r2, r2, #1
+200006bc:	603a      	str	r2, [r7, #0]
+200006be:	2b00      	cmp	r3, #0
+200006c0:	d006      	beq.n	200006d0 <main+0x44>
+			cycle++;
+200006c2:	687b      	ldr	r3, [r7, #4]
+200006c4:	f103 0301 	add.w	r3, r3, #1
+200006c8:	607b      	str	r3, [r7, #4]
+			count = 0;
+200006ca:	f04f 0300 	mov.w	r3, #0
+200006ce:	603b      	str	r3, [r7, #0]
+		}
+
+		switch (cycle) {
+200006d0:	687b      	ldr	r3, [r7, #4]
+200006d2:	2b06      	cmp	r3, #6
+200006d4:	d831      	bhi.n	2000073a <main+0xae>
+200006d6:	a201      	add	r2, pc, #4	; (adr r2, 200006dc <main+0x50>)
+200006d8:	f852 f023 	ldr.w	pc, [r2, r3, lsl #2]
+200006dc:	200006f9 	.word	0x200006f9
+200006e0:	20000703 	.word	0x20000703
+200006e4:	2000070d 	.word	0x2000070d
+200006e8:	20000717 	.word	0x20000717
+200006ec:	20000721 	.word	0x20000721
+200006f0:	2000072b 	.word	0x2000072b
+200006f4:	20000735 	.word	0x20000735
+		case 0:
+			moveCarForward(50);
+200006f8:	f04f 0032 	mov.w	r0, #50	; 0x32
+200006fc:	f7ff fee4 	bl	200004c8 <moveCarForward>
+			break;
+20000700:	e01f      	b.n	20000742 <main+0xb6>
+		case 1:
+			moveCarReverse(50);
+20000702:	f04f 0032 	mov.w	r0, #50	; 0x32
+20000706:	f7ff feef 	bl	200004e8 <moveCarReverse>
+			break;
+2000070a:	e01a      	b.n	20000742 <main+0xb6>
+		case 2:
+			rotateCarRight(30);
+2000070c:	f04f 001e 	mov.w	r0, #30
+20000710:	f7ff fefa 	bl	20000508 <rotateCarRight>
+			break;
+20000714:	e015      	b.n	20000742 <main+0xb6>
+		case 3:
+			rotateCarLeft(30);
+20000716:	f04f 001e 	mov.w	r0, #30
+2000071a:	f7ff ff05 	bl	20000528 <rotateCarLeft>
+			break;
+2000071e:	e010      	b.n	20000742 <main+0xb6>
+		case 4:
+			turnCarRight(40);
+20000720:	f04f 0028 	mov.w	r0, #40	; 0x28
+20000724:	f7ff ff10 	bl	20000548 <turnCarRight>
+			break;
+20000728:	e00b      	b.n	20000742 <main+0xb6>
+		case 5:
+			turnCarLeft(40);
+2000072a:	f04f 0028 	mov.w	r0, #40	; 0x28
+2000072e:	f7ff ff21 	bl	20000574 <turnCarLeft>
+			break;
+20000732:	e006      	b.n	20000742 <main+0xb6>
+		case 6:
+			stopCar();
+20000734:	f7ff feba 	bl	200004ac <stopCar>
+			break;
+20000738:	e003      	b.n	20000742 <main+0xb6>
+		default:
+			cycle = 0;
+2000073a:	f04f 0300 	mov.w	r3, #0
+2000073e:	607b      	str	r3, [r7, #4]
+			break;
+		}
+	}
+20000740:	e7af      	b.n	200006a2 <main+0x16>
+20000742:	e7ae      	b.n	200006a2 <main+0x16>
+
+20000744 <SystemInit>:
+
+/***************************************************************************//**
+ * See system_a2fxxxm3f.h for details.
+ */
+void SystemInit(void)
+{
+20000744:	b480      	push	{r7}
+20000746:	af00      	add	r7, sp, #0
+    /*
+     * Do not make use of global variables or make any asumptions regarding
+     * memory content if modifying this function. The memory content has not been
+     * initialised by the time this function is called by the start-up code.
+     */
+}
+20000748:	46bd      	mov	sp, r7
+2000074a:	bc80      	pop	{r7}
+2000074c:	4770      	bx	lr
+2000074e:	bf00      	nop
+
+20000750 <__libc_init_array>:
+20000750:	b570      	push	{r4, r5, r6, lr}
+20000752:	f240 76c0 	movw	r6, #1984	; 0x7c0
+20000756:	f240 75c0 	movw	r5, #1984	; 0x7c0
+2000075a:	f2c2 0600 	movt	r6, #8192	; 0x2000
+2000075e:	f2c2 0500 	movt	r5, #8192	; 0x2000
+20000762:	1b76      	subs	r6, r6, r5
+20000764:	10b6      	asrs	r6, r6, #2
+20000766:	d006      	beq.n	20000776 <__libc_init_array+0x26>
+20000768:	2400      	movs	r4, #0
+2000076a:	f855 3024 	ldr.w	r3, [r5, r4, lsl #2]
+2000076e:	3401      	adds	r4, #1
+20000770:	4798      	blx	r3
+20000772:	42a6      	cmp	r6, r4
+20000774:	d8f9      	bhi.n	2000076a <__libc_init_array+0x1a>
+20000776:	f240 75c0 	movw	r5, #1984	; 0x7c0
+2000077a:	f240 76c4 	movw	r6, #1988	; 0x7c4
+2000077e:	f2c2 0500 	movt	r5, #8192	; 0x2000
+20000782:	f2c2 0600 	movt	r6, #8192	; 0x2000
+20000786:	1b76      	subs	r6, r6, r5
+20000788:	f000 f80e 	bl	200007a8 <_init>
+2000078c:	10b6      	asrs	r6, r6, #2
+2000078e:	d006      	beq.n	2000079e <__libc_init_array+0x4e>
+20000790:	2400      	movs	r4, #0
+20000792:	f855 3024 	ldr.w	r3, [r5, r4, lsl #2]
+20000796:	3401      	adds	r4, #1
+20000798:	4798      	blx	r3
+2000079a:	42a6      	cmp	r6, r4
+2000079c:	d8f9      	bhi.n	20000792 <__libc_init_array+0x42>
+2000079e:	bd70      	pop	{r4, r5, r6, pc}
+
+200007a0 <DUTY_RANGE>:
+200007a0:	0032 0000                                   2...
+
+200007a4 <DUTY_MIN>:
+200007a4:	0028 0000                                   (...
+
+200007a8 <_init>:
+200007a8:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+200007aa:	bf00      	nop
+200007ac:	bcf8      	pop	{r3, r4, r5, r6, r7}
+200007ae:	bc08      	pop	{r3}
+200007b0:	469e      	mov	lr, r3
+200007b2:	4770      	bx	lr
+
+200007b4 <_fini>:
+200007b4:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+200007b6:	bf00      	nop
+200007b8:	bcf8      	pop	{r3, r4, r5, r6, r7}
+200007ba:	bc08      	pop	{r3}
+200007bc:	469e      	mov	lr, r3
+200007be:	4770      	bx	lr
+
+200007c0 <__frame_dummy_init_array_entry>:
+200007c0:	0485 2000                                   ... 
+
+200007c4 <__do_global_dtors_aux_fini_array_entry>:
+200007c4:	0471 2000                                   q.. 

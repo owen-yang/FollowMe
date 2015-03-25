@@ -1,0 +1,70 @@
+#OPTIONS:"|-top|followme_car|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\Users\\owenyang\\Desktop\\FollowMe\\followme_car\\synthesis\\|-I|C:\\Microsemi\\Libero_v11.4\\Synopsys\\synplify_I201309MSP1-1\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_v11.4\\Synopsys\\synplify_I201309MSP1-1\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_v11.4\\Synopsys\\synplify_I201309MSP1-1\\bin64\\c_ver.exe":1389676458
+#CUR:"C:\\Microsemi\\Libero_v11.4\\Synopsys\\synplify_I201309MSP1-1\\lib\\proasic\\smartfusion.v":1389708296
+#CUR:"C:\\Microsemi\\Libero_v11.4\\Synopsys\\synplify_I201309MSP1-1\\lib\\vlog\\umr_capim.v":1389676374
+#CUR:"C:\\Microsemi\\Libero_v11.4\\Synopsys\\synplify_I201309MSP1-1\\lib\\vlog\\scemi_objects.v":1389676124
+#CUR:"C:\\Microsemi\\Libero_v11.4\\Synopsys\\synplify_I201309MSP1-1\\lib\\vlog\\scemi_pipes.svh":1389676124
+#CUR:"C:\\Microsemi\\Libero_v11.4\\Synopsys\\synplify_I201309MSP1-1\\lib\\vlog\\hypermods.v":1389676124
+#CUR:"C:\\Users\\owenyang\\Desktop\\FollowMe\\followme_car\\component\\work\\followme_car_MSS\\mss_tshell.v":1427313935
+#CUR:"C:\\Users\\owenyang\\Desktop\\FollowMe\\followme_car\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.106\\mss_comps.v":1358982149
+#CUR:"C:\\Users\\owenyang\\Desktop\\FollowMe\\followme_car\\component\\work\\followme_car_MSS\\MSS_CCC_0\\followme_car_MSS_tmp_MSS_CCC_0_MSS_CCC.v":1427313933
+#CUR:"C:\\Users\\owenyang\\Desktop\\FollowMe\\followme_car\\component\\work\\followme_car_MSS\\followme_car_MSS.v":1427313949
+#CUR:"C:\\Users\\owenyang\\Desktop\\FollowMe\\followme_car\\hdl\\MOTOR_CONTROLLER.v":1427321902
+#CUR:"C:\\Users\\owenyang\\Desktop\\FollowMe\\followme_car\\component\\Actel\\DirectCore\\CoreAPB3\\4.0.100\\rtl\\vlog\\core_obfuscated\\coreapb3_muxptob3.v":1366303716
+#CUR:"C:\\Users\\owenyang\\Desktop\\FollowMe\\followme_car\\component\\Actel\\DirectCore\\CoreAPB3\\4.0.100\\rtl\\vlog\\core_obfuscated\\coreapb3_iaddr_reg.v":1366303716
+#CUR:"C:\\Users\\owenyang\\Desktop\\FollowMe\\followme_car\\component\\Actel\\DirectCore\\CoreAPB3\\4.0.100\\rtl\\vlog\\core_obfuscated\\coreapb3.v":1366303716
+#CUR:"C:\\Users\\owenyang\\Desktop\\FollowMe\\followme_car\\component\\work\\followme_car\\followme_car.v":1427322229
+#numinternalfiles:5
+#defaultlanguage:verilog
+0			"C:\Users\owenyang\Desktop\FollowMe\followme_car\component\work\followme_car_MSS\mss_tshell.v" verilog
+1			"C:\Users\owenyang\Desktop\FollowMe\followme_car\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v" verilog
+2			"C:\Users\owenyang\Desktop\FollowMe\followme_car\component\work\followme_car_MSS\MSS_CCC_0\followme_car_MSS_tmp_MSS_CCC_0_MSS_CCC.v" verilog
+3			"C:\Users\owenyang\Desktop\FollowMe\followme_car\component\work\followme_car_MSS\followme_car_MSS.v" verilog
+4			"C:\Users\owenyang\Desktop\FollowMe\followme_car\hdl\MOTOR_CONTROLLER.v" verilog
+5			"C:\Users\owenyang\Desktop\FollowMe\followme_car\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" verilog
+6			"C:\Users\owenyang\Desktop\FollowMe\followme_car\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" verilog
+7			"C:\Users\owenyang\Desktop\FollowMe\followme_car\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v" verilog
+8			"C:\Users\owenyang\Desktop\FollowMe\followme_car\component\work\followme_car\followme_car.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 -1
+3 2
+4 -1
+5 -1
+6 -1
+7 5 6
+8 7 3 4
+#Dependency Lists(Users Of)
+0 -1
+1 -1
+2 3
+3 8
+4 8
+5 7
+6 7
+7 8
+8 -1
+#Design Unit to File Association
+module work MSS_APB 0
+module work MSS_XTLOSC 1
+module work MSS_LPXTLOSC 1
+module work INBUF_MSS 1
+module work OUTBUF_MSS 1
+module work TRIBUFF_MSS 1
+module work BIBUF_MSS 1
+module work BIBUF_OPEND_MSS 1
+module work INBUF_MCCC 1
+module work INBUF_LVPECL_MCCC 1
+module work INBUF_LVDS_MCCC 1
+module work MSSINT 1
+module work MSS_CCC 1
+module work MSS_ALL 1
+module work followme_car_MSS_tmp_MSS_CCC_0_MSS_CCC 2
+module work followme_car_MSS 3
+module work PWM 4
+module work MOTOR_CONTROLLER 4
+module work followme_car 8
+module COREAPB3_LIB CAPB3l 5
+module COREAPB3_LIB CAPB3O 6
+module COREAPB3_LIB CoreAPB3 7

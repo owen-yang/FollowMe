@@ -1,0 +1,23 @@
+#include "bool.h"
+
+#include "car.h"
+
+int main()
+{
+	moveCar(true, true, 0, 0);
+
+
+	int count = 0;
+	bool fwd = true;
+	while( 1 )
+	{
+		if (count++ >= 2000000) {
+			if (fwd)
+				fwd = 0;
+			else
+				fwd = 1;
+			count = 0;
+		}
+		moveCar(fwd, !fwd, 30, 30);
+	}
+}

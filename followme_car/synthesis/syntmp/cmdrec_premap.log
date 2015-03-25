@@ -1,0 +1,14 @@
+C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\bin64\m_proasic.exe  -prodtype  synplify_pro  -encrypt  -pro  -rundir  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis  -part A2F200M3F  -package FBGA484  -grade -1   -globalthreshold 50 -maxfan 24 -opcond COMWC     -report_path 0   -RWCheckOnRam 0     -summaryfile C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\synlog\report\followme_car_premap.xml -top_level_module  followme_car  -oedif  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.edn  -conchk_prepass  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car_cck_prepass.rpt  -freq 100.000  -tcl  C:\Users\owenyang\Desktop\FollowMe\followme_car\component\work\followme_car_MSS\mss_tshell_syn.sdc  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\synwork\followme_car_comp.srs  -flow prepass  -gcc_prepass  -osrd  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\synwork\followme_car_prem.srd  -qsap  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.sap  -devicelib  C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\lib\proasic\smartfusion.v  -ologparam  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\syntmp\followme_car.plg  -osyn  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\synwork\followme_car_prem.srd  -prjdir  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\  -prjname  followme_car_syn  -log  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\synlog\followme_car_premap.srr 
+rc:0 success:1
+C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.edn|o|0|0
+C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car_cck_prepass.rpt|o|0|0
+C:\Users\owenyang\Desktop\FollowMe\followme_car\component\work\followme_car_MSS\mss_tshell_syn.sdc|i|1427313935|204
+C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\synwork\followme_car_comp.srs|i|1427322256|48690
+C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\synwork\followme_car_prem.srd|o|1427322260|49122
+C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.sap|o|1427322260|3554
+C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\lib\proasic\smartfusion.v|i|1389708296|72817
+C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\syntmp\followme_car.plg|o|1427322257|0
+C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\synwork\followme_car_prem.srd|o|1427322260|49122
+C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\synlog\followme_car_premap.srr|o|1427322260|2391
+C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\bin64\m_proasic.exe|i|1401309616|14819328
+C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\bin\m_proasic.exe|i|1401306976|12178944

@@ -1,0 +1,17 @@
+*****************************************************************
+Pin Report - Date: Wed Mar 25 18:26:15 2015 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.4
+Version: 11.4.0.112
+Design Name: followme_car
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+*****************************************************************
+Port        |Pin |Fixed |Function        |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+------------|----|------|----------------|--------|------------------|-----|--------------|----------------|-----|-----------------|------------|--------------|
+LEFT_HB1     E3   Yes    GFA2/IO68PDB5V0  LVTTL    12                 High  None           ---              No    35                No           No
+LEFT_HB2     F3   Yes    GFB2/IO68NDB5V0  LVTTL    12                 High  None           ---              No    35                No           No
+MSS_RESET_N  R1   Yes    MSS_RESET_N      LVTTL    ---                ---   None           No               ---   ---               No           Yes
+RIGHT_HB1    G4   Yes    GFC1/IO66PPB5V0  LVTTL    12                 High  None           ---              No    35                No           No
+RIGHT_HB2    H5   Yes    GFC0/IO66NPB5V0  LVTTL    12                 High  None           ---              No    35                No           No

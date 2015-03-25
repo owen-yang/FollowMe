@@ -1,0 +1,41 @@
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 004R, Built May 28 2014 16:40:10
+Copyright (C) 1994-2013, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use or distribution of the software is strictly prohibited.
+Product Version I-2013.09M-SP1-1 
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+Reading constraint file: C:\Users\owenyang\Desktop\FollowMe\followme_car\component\work\followme_car_MSS\mss_tshell_syn.sdc
+@L: C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car_scck.rpt 
+Printing clock  summary report in "C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: MF236 :"c:\users\owenyang\desktop\followme\followme_car\hdl\motor_controller.v":97:42:97:46|Generating a type div divider 
+@N: MF236 :"c:\users\owenyang\desktop\followme\followme_car\hdl\motor_controller.v":97:42:97:46|Generating a type div divider 
+
+
+Clock Summary
+**************
+
+Start       Requested     Requested     Clock        Clock      
+Clock       Frequency     Period        Type         Group      
+----------------------------------------------------------------
+FAB_CLK     100.0 MHz     10.000        declared     clk_group_0
+FCLK        100.0 MHz     10.000        declared     clk_group_0
+================================================================
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 49MB peak: 112MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Wed Mar 25 18:24:20 2015
+
+###########################################################]
