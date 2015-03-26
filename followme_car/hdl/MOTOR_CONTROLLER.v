@@ -49,7 +49,7 @@ always @(posedge PCLK) begin
         end
     end
 
-    if (!PRESERN == 1) begin
+    if (~PRESERN) begin
         RIGHT_DUTY_CYCLE <= 0;
         LEFT_DUTY_CYCLE <= 0;
         RIGHT_FWD <= 1;
