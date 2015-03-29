@@ -1,12 +1,12 @@
 <project name="followme_car" version="1.1">
     <ProjectDirectory>
-        C:/Users/owenyang/Desktop/FollowMe/followme_car/designer/impl1/followme_car_fp
+        C:/Users/lstolz/Desktop/FollowMe/FollowMe/followme_car/designer/impl1/followme_car_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
     </View>
     <LogFile>
-        C:/Users/owenyang/Desktop/FollowMe/followme_car/designer/impl1/followme_car_fp/followme_car.log
+        C:/Users/lstolz/Desktop/FollowMe/FollowMe/followme_car/designer/impl1/followme_car_fp/followme_car.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -77,7 +77,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                C:\Users\owenyang\Desktop\FollowMe\followme_car\designer\impl1\followme_car_fp\followme_car.pdb
+                C:\Users\lstolz\Desktop\FollowMe\FollowMe\followme_car\designer\impl1\followme_car_fp\followme_car.pdb
             </filename>
             <local>
                 projectData\followme_car.pdb

@@ -1,16 +1,25 @@
-C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\bin64\c_ver.exe  -osyn  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\synwork\followme_car_comp.srs  -top  followme_car  -prodtype  synplify_pro  -nram -fixsmult   -divnmod -I C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\  -I C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\lib  -v2001  -devicelib  C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\lib\proasic\smartfusion.v  -encrypt  -pro  -dmgen  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\dm  -ui -fid2 -ram -sharing on  -ll 2000 -autosm -lib work C:\Users\owenyang\Desktop\FollowMe\followme_car\component\work\followme_car_MSS\mss_tshell.v -lib work C:\Users\owenyang\Desktop\FollowMe\followme_car\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v -lib work C:\Users\owenyang\Desktop\FollowMe\followme_car\component\work\followme_car_MSS\MSS_CCC_0\followme_car_MSS_tmp_MSS_CCC_0_MSS_CCC.v -lib work C:\Users\owenyang\Desktop\FollowMe\followme_car\component\work\followme_car_MSS\followme_car_MSS.v -lib work C:\Users\owenyang\Desktop\FollowMe\followme_car\hdl\MOTOR_CONTROLLER.v -lib COREAPB3_LIB C:\Users\owenyang\Desktop\FollowMe\followme_car\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v -lib COREAPB3_LIB C:\Users\owenyang\Desktop\FollowMe\followme_car\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v -lib COREAPB3_LIB C:\Users\owenyang\Desktop\FollowMe\followme_car\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v -lib work C:\Users\owenyang\Desktop\FollowMe\followme_car\component\work\followme_car\followme_car.v -loga  C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.srr 
+C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\bin64\c_ver.exe  -osyn  "C:\Users\lstolz\Desktop\Follow Me\FollowMe\followme_car\synthesis\synwork\followme_car_comp.srs"  -top  followme_car  -prodtype  synplify_pro  -nram -fixsmult   -divnmod -I "C:\Users\lstolz\Desktop\Follow Me\FollowMe\followme_car\synthesis\"  -I C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\lib  -v2001  -devicelib  C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\lib\proasic\smartfusion.v  -encrypt  -pro  -dmgen  "C:\Users\lstolz\Desktop\Follow Me\FollowMe\followme_car\synthesis\dm"  -ui -fid2 -ram -sharing on  -ll 2000 -autosm -lib work "C:\Users\lstolz\Desktop\Follow Me\FollowMe\followme_car\component\work\followme_car_MSS\mss_tshell.v" -lib work "C:\Users\lstolz\Desktop\Follow Me\FollowMe\followme_car\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v" -lib work "C:\Users\lstolz\Desktop\Follow Me\FollowMe\followme_car\component\work\followme_car_MSS\MSS_CCC_0\followme_car_MSS_tmp_MSS_CCC_0_MSS_CCC.v" -lib work "C:\Users\lstolz\Desktop\Follow Me\FollowMe\followme_car\component\work\followme_car_MSS\followme_car_MSS.v" -lib work "C:\Users\lstolz\Desktop\Follow Me\FollowMe\followme_car\hdl\MOTOR_CONTROLLER.v" -lib COREAPB3_LIB "C:\Users\lstolz\Desktop\Follow Me\FollowMe\followme_car\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" -lib COREAPB3_LIB "C:\Users\lstolz\Desktop\Follow Me\FollowMe\followme_car\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" -lib COREAPB3_LIB "C:\Users\lstolz\Desktop\Follow Me\FollowMe\followme_car\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v" -lib work "C:\Users\lstolz\Desktop\Follow Me\FollowMe\followme_car\component\work\followme_car\followme_car.v" -loga  "C:\Users\lstolz\Desktop\Follow Me\FollowMe\followme_car\synthesis\followme_car.srr" 
 rc:1 success:1
-C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\synwork\followme_car_comp.srs|o|1427322256|48690
+C:\Users\lstolz\Desktop\Follow Me\FollowMe\followme_car\synthesis\synwork\followme_car_comp.srs|o|1427658694|48669
 C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\lib\proasic\smartfusion.v|i|1389708296|72817
-C:\Users\owenyang\Desktop\FollowMe\followme_car\component\work\followme_car_MSS\mss_tshell.v|i|1427313935|12226
-C:\Users\owenyang\Desktop\FollowMe\followme_car\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v|i|1358982149|11243
-C:\Users\owenyang\Desktop\FollowMe\followme_car\component\work\followme_car_MSS\MSS_CCC_0\followme_car_MSS_tmp_MSS_CCC_0_MSS_CCC.v|i|1427313933|2891
-C:\Users\owenyang\Desktop\FollowMe\followme_car\component\work\followme_car_MSS\followme_car_MSS.v|i|1427313949|17936
-C:\Users\owenyang\Desktop\FollowMe\followme_car\hdl\MOTOR_CONTROLLER.v|i|1427321902|2428
-C:\Users\owenyang\Desktop\FollowMe\followme_car\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v|i|1366303716|6738
-C:\Users\owenyang\Desktop\FollowMe\followme_car\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v|i|1366303716|3312
-C:\Users\owenyang\Desktop\FollowMe\followme_car\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v|i|1366303716|32421
-C:\Users\owenyang\Desktop\FollowMe\followme_car\component\work\followme_car\followme_car.v|i|1427322229|13743
-C:\Users\owenyang\Desktop\FollowMe\followme_car\synthesis\followme_car.srr|o|1427322256|19900
+"C:\Users\lstolz\Desktop\Follow|i|0|0
+Me\FollowMe\followme_car\component\work\followme_car_MSS\mss_tshell.v"|i|0|0
+"C:\Users\lstolz\Desktop\Follow|i|0|0
+Me\FollowMe\followme_car\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v"|i|0|0
+"C:\Users\lstolz\Desktop\Follow|i|0|0
+Me\FollowMe\followme_car\component\work\followme_car_MSS\MSS_CCC_0\followme_car_MSS_tmp_MSS_CCC_0_MSS_CCC.v"|i|0|0
+"C:\Users\lstolz\Desktop\Follow|i|0|0
+Me\FollowMe\followme_car\component\work\followme_car_MSS\followme_car_MSS.v"|i|0|0
+"C:\Users\lstolz\Desktop\Follow|i|0|0
+Me\FollowMe\followme_car\hdl\MOTOR_CONTROLLER.v"|i|0|0
+"C:\Users\lstolz\Desktop\Follow|i|0|0
+Me\FollowMe\followme_car\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v"|i|0|0
+"C:\Users\lstolz\Desktop\Follow|i|0|0
+Me\FollowMe\followme_car\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v"|i|0|0
+"C:\Users\lstolz\Desktop\Follow|i|0|0
+Me\FollowMe\followme_car\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v"|i|0|0
+"C:\Users\lstolz\Desktop\Follow|i|0|0
+Me\FollowMe\followme_car\component\work\followme_car\followme_car.v"|i|0|0
+C:\Users\lstolz\Desktop\Follow Me\FollowMe\followme_car\synthesis\followme_car.srr|o|1427658694|20636
 C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\bin64\c_ver.exe|i|1389676458|5733376
 C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\bin\c_ver.exe|i|1389676244|2205696

@@ -2,24 +2,23 @@ Microsemi Libero Software
 Version: 11.4.0.112
 Release: v11.4
 
-'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\owenyang\Desktop\FollowMe\followme_car\designer'
+'IDE_DESIGNERVIEW_ROOTDIR' set to 'C:\Users\lstolz\Desktop\Follow
+Me\FollowMe\followme_car\designer'
 Info: The design followme_car.adb was last modified by software version 11.4.0.112.
 Opened an existing Libero design followme_car.adb.
 
-The Execute Script command succeeded ( 00:00:27 )
-Design saved to file
-C:\Users\owenyang\Desktop\FollowMe\followme_car\designer\impl1\followme_car.adb.
-Wrote pin report to file:
-C:\Users\owenyang\Desktop\FollowMe\followme_car\designer\impl1\followme_car_report_pin_byname.t\
-xt
+The Execute Script command succeeded ( 00:00:28 )
+Design saved to file C:\Users\lstolz\Desktop\Follow
+Me\FollowMe\followme_car\designer\impl1\followme_car.adb.
+Wrote pin report to file: C:\Users\lstolz\Desktop\Follow
+Me\FollowMe\followme_car\designer\impl1\followme_car_report_pin_byname.txt
+
+The Report command succeeded ( 00:00:00 )
+Wrote pin report to file: C:\Users\lstolz\Desktop\Follow
+Me\FollowMe\followme_car\designer\impl1\followme_car_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:01 )
-Wrote pin report to file:
-C:\Users\owenyang\Desktop\FollowMe\followme_car\designer\impl1\followme_car_report_pin_bynumber\
-.txt
 
-The Report command succeeded ( 00:00:01 )
-
-The Execute Script command succeeded ( 00:00:02 )
+The Execute Script command succeeded ( 00:00:01 )
 Design closed.
 

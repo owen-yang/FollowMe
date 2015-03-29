@@ -3,27 +3,25 @@ Version: 11.4.0.112
 Release: v11.4
 
 Software Version: 11.4.0.112
-PDB file
-'C:\Users\owenyang\Desktop\FollowMe\followme_car\designer\impl1\followme_car_fp\followme_car.pd\
-b' has been loaded successfully.
-DESIGN : followme_car;  CHECKSUM : C4BB;  PDB_VERSION : 1.8
+PDB file 'C:\Users\lstolz\Desktop\Follow
+Me\FollowMe\followme_car\designer\impl1\followme_car_fp\followme_car.pdb' has been loaded
+successfully.
+DESIGN : followme_car;  CHECKSUM : 26B6;  PDB_VERSION : 1.8
 Driver : 3.0.0 build 1
 programmer '79178' : FlashPro3
-Opened
-'C:/Users/owenyang/Desktop/FollowMe/followme_car/designer/impl1/followme_car_fp/followme_car.pr\
-o'
+Opened 'C:/Users/lstolz/Desktop/Follow
+Me/FollowMe/followme_car/designer/impl1/followme_car_fp/followme_car.pro'
 The 'open_project' command succeeded.
 The 'set_programming_file' command succeeded.
 The 'set_device_type' command succeeded.
 The 'set_device_package' command succeeded.
-Info: Adding Flash Memory data from file
-      C:\Users\owenyang\Desktop\FollowMe\followme_car\component\work\followme_car_MSS\MSS_ENVM_\
-      0\MSS_ENVM_0.efc.
-Info: Adding FPGA Array data from file
-      C:\Users\owenyang\Desktop\FollowMe\followme_car\designer\impl1\followme_car.fdb.
-PDB file
-'C:\Users\owenyang\Desktop\FollowMe\followme_car\designer\impl1\followme_car_fp\followme_car.pd\
-b' has been loaded successfully.
+Info: Adding Flash Memory data from file C:\Users\lstolz\Desktop\Follow
+      Me\FollowMe\followme_car\component\work\followme_car_MSS\MSS_ENVM_0\MSS_ENVM_0.efc.
+Info: Adding FPGA Array data from file C:\Users\lstolz\Desktop\Follow
+      Me\FollowMe\followme_car\designer\impl1\followme_car.fdb.
+PDB file 'C:\Users\lstolz\Desktop\Follow
+Me\FollowMe\followme_car\designer\impl1\followme_car_fp\followme_car.pdb' has been loaded
+successfully.
 DESIGN : followme_car;  CHECKSUM : 26B6;  PDB_VERSION : 1.8
 The 'update_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
@@ -41,7 +39,7 @@ programmer '79178' : Verifying FPGA Array
 programmer '79178' :         Verifying FPGA Array -- pass
 programmer '79178' : Program System Init and Boot Clients...
 programmer '79178' : Verify System Init and Boot Clients...
-programmer '79178' : Finished: Wed Mar 25 18:27:38 2015 (Elapsed time 00:00:36)
+programmer '79178' : Finished: Sun Mar 29 15:55:10 2015 (Elapsed time 00:00:36)
 programmer '79178' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o

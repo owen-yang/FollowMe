@@ -1,7 +1,4 @@
-# (OPEN DESIGN)
-
-open_design "C:/Users/owenyang/Desktop/FollowMe/followme_car/designer/impl1/followme_car.adb"
-export -format "FDB" {C:/Users/owenyang/Desktop/FollowMe/followme_car/designer/impl1/followme_car.fdb}
-
-save_design "C:/Users/owenyang/Desktop/FollowMe/followme_car/designer/impl1/followme_car.adb"
+set_defvar "IDE_DESIGNERVIEW_ROOTDIR" {C:\Users\lstolz\Desktop\Follow Me\FollowMe\followme_car\designer}
+open_design followme_car.adb
+open_tool mvn_ioedit
 

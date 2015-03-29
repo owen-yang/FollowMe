@@ -20,8 +20,8 @@
 @N: MF176 |Default generator successful 
 @N: MF176 |Default generator successful 
 @N: MF176 |Default generator successful 
-@N: MF238 :"c:\users\owenyang\desktop\followme\followme_car\hdl\motor_controller.v":95:17:95:26|Found 20-bit incrementor, 'un3_count_1[19:0]'
-@N: MF179 :"c:\users\owenyang\desktop\followme\followme_car\hdl\motor_controller.v":97:8:97:46|Found 28 bit by 28 bit '<' comparator, 'PWM_OUT6'
+@N: MF238 :"c:\users\lstolz\desktop\follow me\followme\followme_car\hdl\motor_controller.v":95:17:95:26|Found 20-bit incrementor, 'un3_count_1[19:0]'
+@N: MF179 :"c:\users\lstolz\desktop\follow me\followme\followme_car\hdl\motor_controller.v":97:8:97:46|Found 28 bit by 28 bit '<' comparator, 'PWM_OUT6'
 @N: MF176 |Default generator successful 
 @N: MF176 |Default generator successful 
 @N: MF176 |Default generator successful 

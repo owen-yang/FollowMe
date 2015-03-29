@@ -1,6 +1,7 @@
 KEY LIBERO "11.4"
 KEY CAPTURE "11.4.0.112"
 KEY DEFAULT_IMPORT_LOC ""
+KEY DEFAULT_OPEN_LOC ""
 KEY ProjectID "0"
 KEY HDLTechnology "VERILOG"
 KEY VendorTechnology_Family "SmartFusion"
@@ -8,15 +9,20 @@ KEY VendorTechnology_Die "IP4X3M1"
 KEY VendorTechnology_Package "fg484"
 KEY VendorTechnology_Speed "-1"
 KEY VendorTechnology_DieVoltage "1.5"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE ""
 KEY VendorTechnology_IO_DEFT_STD "LVTTL"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY ""
+KEY VendorTechnology_RAD_EXPOSURE ""
 KEY VendorTechnology_RESTRICTPROBEPINS "1"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE ""
 KEY VendorTechnology_TEMPR "COM"
 KEY VendorTechnology_VCCI_1.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "C:\Users\owenyang\Desktop\FollowMe\followme_car"
+KEY ProjectLocation "C:\Users\lstolz\Desktop\FollowMe\FollowMe\followme_car"
 KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
@@ -43,13 +49,13 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1427322229"
+TIME="1427658343"
 SIZE="2783"
 PARENT="<project>\component\work\followme_car\followme_car.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1427322229"
+TIME="1427658343"
 SIZE="1260"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
@@ -57,14 +63,14 @@ IS_INCLUDED="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\mti\scripts\wave_user.do,do"
 STATE="utd"
-TIME="1366303710"
+TIME="1427658343"
 SIZE="912"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
 STATE="utd"
-TIME="1366303710"
+TIME="1427658343"
 SIZE="4636"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf"
@@ -72,7 +78,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
 STATE="utd"
-TIME="1366303710"
+TIME="1427658343"
 SIZE="9073"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf"
@@ -80,7 +86,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 STATE="utd"
-TIME="1366303710"
+TIME="1427658343"
 SIZE="25129"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf"
@@ -88,7 +94,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 STATE="utd"
-TIME="1366303710"
+TIME="1427658344"
 SIZE="36275"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf"
@@ -96,7 +102,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
 STATE="utd"
-TIME="1366303710"
+TIME="1427658344"
 SIZE="122456"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf"
@@ -104,7 +110,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3.v,hdl"
 STATE="utd"
-TIME="1366303716"
+TIME="1427658344"
 SIZE="32421"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf"
@@ -112,7 +118,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v,hdl"
 STATE="utd"
-TIME="1366303716"
+TIME="1427658344"
 SIZE="3312"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf"
@@ -120,7 +126,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v,hdl"
 STATE="utd"
-TIME="1366303716"
+TIME="1427658344"
 SIZE="6738"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf"
@@ -128,7 +134,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\test\user\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1366303710"
+TIME="1427658344"
 SIZE="23627"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf"
@@ -138,14 +144,14 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.106\MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1427313949"
+TIME="1427658344"
 SIZE="945"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v,hdl"
 STATE="utd"
-TIME="1358978549"
-SIZE="11243"
+TIME="1427658344"
+SIZE="11942"
 PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.106\MSS.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
@@ -156,129 +162,139 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CCC\2.0.106\MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1427313933"
+TIME="1427658346"
 SIZE="252"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1427313933"
+TIME="1427658346"
 SIZE="252"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_COM\1.0.200\MSS_COM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1427313933"
+TIME="1427658346"
 SIZE="252"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_DMA\1.0.101\MSS_DMA.cxf,actgen_cxf"
 STATE="utd"
-TIME="1427313933"
+TIME="1427658346"
 SIZE="252"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ENVM\2.3.102\MSS_ENVM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1427313934"
+TIME="1427658346"
 SIZE="253"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIC\1.0.101\MSS_FIC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1427313934"
+TIME="1427658346"
 SIZE="252"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIO\1.0.203\MSS_FIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1427313934"
+TIME="1427658346"
 SIZE="252"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_GPIO\1.0.101\MSS_GPIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1427313934"
+TIME="1427658346"
 SIZE="253"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_INTR\1.0.101\MSS_INTR.cxf,actgen_cxf"
 STATE="utd"
-TIME="1427313934"
+TIME="1427658346"
 SIZE="253"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RESET\1.0.101\MSS_RESET.cxf,actgen_cxf"
 STATE="utd"
-TIME="1427313934"
+TIME="1427658346"
 SIZE="254"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RTC\1.0.100\MSS_RTC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1427313934"
+TIME="1427658346"
 SIZE="252"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_TIMER\1.0.100\MSS_TIMER.cxf,actgen_cxf"
 STATE="utd"
-TIME="1427313934"
+TIME="1427658346"
 SIZE="254"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UFROM\1.0.100\MSS_UFROM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1427313934"
+TIME="1427658346"
 SIZE="254"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 ENDFILE
+VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
+STATE="utd"
+TIME="1427658346"
+SIZE="1863"
+ENDFILE
+VALUE "<project>\component\work\DESIGN_IO\DESIGN_IO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1427658346"
+SIZE="413"
+ENDFILE
 VALUE "<project>\component\work\followme_car\followme_car.cxf,actgen_cxf"
 STATE="utd"
-TIME="1427322233"
+TIME="1427658346"
 SIZE="2961"
 ENDFILE
 VALUE "<project>\component\work\followme_car\followme_car.v,hdl"
 STATE="utd"
-TIME="1427322229"
+TIME="1427658346"
 SIZE="13743"
 PARENT="<project>\component\work\followme_car\followme_car.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\followme_car_MSS\followme_car_MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1427313949"
+TIME="1427658346"
 SIZE="10547"
 ENDFILE
 VALUE "<project>\component\work\followme_car_MSS\followme_car_MSS.v,hdl"
 STATE="utd"
-TIME="1427313949"
+TIME="1427658346"
 SIZE="17936"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\followme_car_MSS\MSS_CCC_0\followme_car_MSS_tmp_MSS_CCC_0_MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1427313933"
+TIME="1427658346"
 SIZE="499"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 ENDFILE
 VALUE "<project>\component\work\followme_car_MSS\MSS_CCC_0\followme_car_MSS_tmp_MSS_CCC_0_MSS_CCC.v,hdl"
 STATE="utd"
-TIME="1427313933"
+TIME="1427658346"
 SIZE="2891"
 PARENT="<project>\component\work\followme_car_MSS\MSS_CCC_0\followme_car_MSS_tmp_MSS_CCC_0_MSS_CCC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\followme_car_MSS\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
 STATE="utd"
-TIME="1427313934"
+TIME="1427658346"
 SIZE="15876"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\followme_car_MSS\mss_tshell.v,hdl"
 STATE="utd"
-TIME="1427313935"
+TIME="1427658346"
 SIZE="12226"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -290,7 +306,7 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\followme_car_MSS\mss_tshell_syn.sdc,sdc"
 STATE="utd"
-TIME="1427313935"
+TIME="1427658346"
 SIZE="204"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -302,118 +318,118 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\followme_car.adb,adb"
 STATE="utd"
-TIME="1427314122"
-SIZE="48640"
+TIME="1427662725"
+SIZE="2048000"
 ENDFILE
 VALUE "<project>\designer\impl1\followme_car.fdb,fdb"
 STATE="utd"
-TIME="1427322396"
-SIZE="67751"
+TIME="1427658870"
+SIZE="67755"
 ENDFILE
 VALUE "<project>\designer\impl1\followme_car.ide_des,ide_des"
 STATE="utd"
-TIME="1427310728"
-SIZE="211"
+TIME="1427662725"
+SIZE="1014"
 ENDFILE
 VALUE "<project>\designer\impl1\followme_car_compile_log.rpt,log"
 STATE="utd"
-TIME="1427322317"
-SIZE="35266"
+TIME="1427658763"
+SIZE="35299"
 ENDFILE
 VALUE "<project>\designer\impl1\followme_car_fp\followme_car.pdb,pdb"
 STATE="utd"
-TIME="1427314340"
-SIZE="38211"
+TIME="1427658912"
+SIZE="73228"
 ENDFILE
 VALUE "<project>\designer\impl1\followme_car_fp\followme_car.pro,pro"
 STATE="utd"
-TIME="1427314340"
-SIZE="2530"
+TIME="1427658912"
+SIZE="2554"
 ENDFILE
 VALUE "<project>\designer\impl1\followme_car_fp\projectData\followme_car.pdb,pdb"
 STATE="utd"
-TIME="1427314340"
-SIZE="38211"
+TIME="1427658912"
+SIZE="73228"
 ENDFILE
 VALUE "<project>\designer\impl1\followme_car_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1427322377"
-SIZE="2706"
+TIME="1427658825"
+SIZE="2723"
 ENDFILE
 VALUE "<project>\designer\impl1\followme_car_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1427322398"
-SIZE="723"
+TIME="1427658848"
+SIZE="762"
 ENDFILE
 VALUE "<project>\designer\impl1\followme_car_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1427322382"
-SIZE="1205"
+TIME="1427658831"
+SIZE="1222"
 ENDFILE
 VALUE "<project>\hdl\MOTOR_CONTROLLER.v,hdl"
 STATE="utd"
-TIME="1427321902"
-SIZE="2428"
+TIME="1427658347"
+SIZE="2423"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 STATE="utd"
-TIME="1366303710"
+TIME="1427658347"
 SIZE="1229"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
 STATE="utd"
-TIME="1358978538"
-SIZE="41"
+TIME="1427658347"
+SIZE="42"
 PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.106\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
 STATE="utd"
-TIME="1366303715"
+TIME="1427658347"
 SIZE="8016"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1427322230"
+TIME="1427658347"
 SIZE="641"
 PARENT="<project>\component\work\followme_car\followme_car.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
-TIME="1427313933"
+TIME="1427658347"
 SIZE="5460"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\user.bfm,sim"
 STATE="utd"
-TIME="1427313933"
+TIME="1427658347"
 SIZE="670"
 PARENT="<project>\component\work\followme_car_MSS\followme_car_MSS.cxf"
 ENDFILE
 VALUE "<project>\synthesis\followme_car.edn,syn_edn"
 STATE="utd"
-TIME="1427322297"
+TIME="1427658737"
 SIZE="1083817"
 ENDFILE
 VALUE "<project>\synthesis\followme_car.so,so"
 STATE="utd"
-TIME="1427314094"
-SIZE="241"
+TIME="1427658737"
+SIZE="249"
 ENDFILE
 VALUE "<project>\synthesis\followme_car_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1427314094"
-SIZE="430"
+TIME="1427658737"
+SIZE="550"
 ENDFILE
 VALUE "<project>\synthesis\followme_car_syn.prj,prj"
 STATE="utd"
-TIME="1427314096"
-SIZE="2829"
+TIME="1427658739"
+SIZE="2917"
 ENDFILE
 VALUE "<project>\synthesis\synwork\followme_car_comp.so,so"
 STATE="utd"
-TIME="1427317735"
+TIME="1427658347"
 SIZE="159"
 ENDFILE
 ENDLIST
@@ -478,6 +494,17 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.0.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
 ENDLIST
 ENDLIST
 ENDLIST
@@ -558,7 +585,7 @@ ENDLIST
 LIST PhySynthesisOptions
 ENDLIST
 LIST Profiles
-NAME="SoftConsole v3.3"
+NAME="SoftConsole33"
 FUNCTION="SoftwareIDE"
 TOOL="SoftConsole"
 LOCATION="C:\Actel\Libero_v9.1\SoftConsole\Eclipse\eclipse.exe"
@@ -571,8 +598,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_v11.4\Synopsys\synplify_I201309MSP1-1\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -618,6 +645,17 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
+LIST "CoreAPB3::COREAPB3_LIB"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -632,16 +670,29 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Generate Programming Data:followme_car_prgdata_log.rpt
+ReportsCurrentItem;Place and Route:followme_car_place_and_route_report.txt
 SmartDesign;followme_car;0
 SmartDesign;followme_car_MSS;0
 HDL;hdl\MOTOR_CONTROLLER.v;0
-ACTIVEVIEW;Reports
+StartPage;StartPage;0
+ACTIVEVIEW;followme_car
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
 ENDLIST
 LIST "BIBUF_OPEND_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
+SUBBLOCK "HAL::work","","FALSE","FALSE"
+SUBBLOCK "MSS_GPIO_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_IAP_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_NVM_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_PDMA_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_RTC_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_Timer_Driver::work","","FALSE","FALSE"
+SUBBLOCK "SmartFusion_CMSIS_PAL::work","","FALSE","FALSE"
+ENDLIST
+LIST "DESIGN_IO::work","component\work\DESIGN_IO\DESIGN_IO.cxf","TRUE","FALSE"
 ENDLIST
 LIST "followme_car::work","component\work\followme_car\followme_car.v","TRUE","FALSE"
 SUBBLOCK "followme_car_MSS::work","component\work\followme_car_MSS\followme_car_MSS.v","TRUE","FALSE"
@@ -655,6 +706,8 @@ SUBBLOCK "INBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps
 ENDLIST
 LIST "followme_car_MSS_tmp_MSS_CCC_0_MSS_CCC::work","component\work\followme_car_MSS\MSS_CCC_0\followme_car_MSS_tmp_MSS_CCC_0_MSS_CCC.v","FALSE","FALSE"
 SUBBLOCK "MSS_CCC::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "HAL::work","","FALSE","FALSE"
 ENDLIST
 LIST "INBUF_LVDS_MCCC::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
 ENDLIST
@@ -673,7 +726,19 @@ LIST "MSS_APB::work","component\work\followme_car_MSS\mss_tshell.v","FALSE","FAL
 ENDLIST
 LIST "MSS_CCC::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
 ENDLIST
+LIST "MSS_GPIO_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "MSS_IAP_Driver::work","","FALSE","FALSE"
+ENDLIST
 LIST "MSS_LPXTLOSC::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
+ENDLIST
+LIST "MSS_NVM_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "MSS_PDMA_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "MSS_RTC_Driver::work","","FALSE","FALSE"
+ENDLIST
+LIST "MSS_Timer_Driver::work","","FALSE","FALSE"
 ENDLIST
 LIST "MSS_XTLOSC::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
 ENDLIST
@@ -682,6 +747,8 @@ ENDLIST
 LIST "OUTBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
 ENDLIST
 LIST "PWM::work","hdl\MOTOR_CONTROLLER.v","FALSE","FALSE"
+ENDLIST
+LIST "SmartFusion_CMSIS_PAL::work","","FALSE","FALSE"
 ENDLIST
 LIST "TRIBUFF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v","FALSE","FALSE"
 ENDLIST
