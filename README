@@ -32,8 +32,20 @@ H-BRIDGE INFO:
 PWM Frequency		= 100Hz
 Minimum Duty Cycle	= 40%
 Maximum Duty Cycle	= 90%
-VS (same as motors) 	= 7.3V
-VLS 			= 5V
-CSA 			= 0V
-CSB 			= 0V
+
+OUT1 	= 1-CAR
+VS	= BATTERY POS
+ENA	= 5V
+GND	= GND
+CSA	= GND
+OUT2	= 2-CAR
+IN1	= F1-BREAKOUT
+IN2	= F0-BREAKOUT
+VLS	= 5V
+ENB	= 5V
+OUT3	= 3-CAR
+CSB	= GND
+IN3	= F2-BREAKOUT
+IN4	= F3-BREAKOUT
+OUT4	= 4-CAR
 -------------------------------
