@@ -1,6 +1,6 @@
 #include "magnetometer.h"
 
-magnetometer_data mag_data;
+LSM_data_struct LSM_data;
 
 void write8(const uint8_t reg, uint8_t value)
 {
@@ -19,16 +19,18 @@ void write8(const uint8_t reg, uint8_t value)
 
 void read_reg(const uint8_t reg, uint8_t *buf, size_t size)
 {
-	uint8_t target_addr = reg;
-	// if (size > 1) target_addr |= 0x80; // sequential
+	uint8_t serial_addr;
 
+	// this is correct assuming we're not using the temperature
+	// sensing capabilities which is true
+	if (reg < 0x20) serial_addr = MAGNET_TARGET_ADDRESS;
+	else serial_addr = ACCEL_TARGET_ADDRESS;
 
 	MSS_I2C_write_read
 	(
 		&g_mss_i2c1,
-		MAGNET_TARGET_ADDRESS,
-		&target_addr,
-		sizeof(target_addr),
+		serial_addr,
+		&reg, sizeof(reg),
 		buf, size,
 		MSS_I2C_RELEASE_BUS
 	);
@@ -36,41 +38,58 @@ void read_reg(const uint8_t reg, uint8_t *buf, size_t size)
 	MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
 }
 
-void enable_magnetometer()
+void enable_LSM()
 {
+	// enable accelerometer
+	write8(0x20, 0x57);
+
+	// enable magnetometer
 	write8(0x00, 0x10);
 	write8(0x01, 0x20);
 	write8(0x02, 0x00);
 }
 
-void read_magnetometer()
+void read_LSM()
 {
 	uint8_t desired_reg = 0x03;
 	uint8_t buf[] = {0, 0, 0, 0, 0, 0};
 
 	read_reg(desired_reg, buf, sizeof(buf));
+	// higher bytes are first, x z y
+	LSM_data.mag_x = (int16_t)(buf[1] | ((int16_t)buf[0] << 8));
+	LSM_data.mag_y = (int16_t)(buf[5] | ((int16_t)buf[4] << 8));
+	LSM_data.mag_z = (int16_t)(buf[3] | ((int16_t)buf[2] << 8));
 
-	mag_data.x = (int16_t)(buf[1] | ((int16_t)buf[0] << 8));
-	mag_data.y = (int16_t)(buf[5] | ((int16_t)buf[4] << 8));
-	mag_data.z = (int16_t)(buf[3] | ((int16_t)buf[2] << 8));
+	desired_reg = 0x28;
+
+	read_reg(desired_reg, buf, sizeof(buf));
+	// lower bytes are first, x y z
+	LSM_data.acc_x = (int16_t)(buf[0] | ((int16_t)buf[1] << 8));
+	LSM_data.acc_y = (int16_t)(buf[2] | ((int16_t)buf[3] << 8));
+	LSM_data.acc_z = (int16_t)(buf[4] | ((int16_t)buf[5] << 8));
+
 }
 
 void send_over_XBee()
 {
-	uint8_t data[6] = {mag_data.x >> 8u, mag_data.x,
-					   mag_data.y >> 8u, mag_data.y,
-					   mag_data.z >> 8u, mag_data.z };
-	/* transmit the magnet data */
+	uint8_t data[LSM_DATA_TOTAL_SIZE] =
+					   { LSM_data.acc_x >> 8u, LSM_data.acc_x,
+						 LSM_data.acc_y >> 8u, LSM_data.acc_y,
+						 LSM_data.acc_z >> 8u, LSM_data.acc_z,
+						 LSM_data.mag_x >> 8u, LSM_data.mag_x,
+					     LSM_data.mag_y >> 8u, LSM_data.mag_y,
+					     LSM_data.mag_z >> 8u, LSM_data.mag_z };
+	/* transmit the data */
 	MSS_UART_polled_tx
 	(
 		&g_mss_uart1,
-		data, // data from magnetometer
-		sizeof(data)
+		data, sizeof(data)
 	);
 }
 
 void print_data()
 {
-	printf("X data: %x\n\rY data: %x\n\rZ data: %x\n\n\r",
-			mag_data.x, mag_data.y, mag_data.z);
+	printf("Accel X data: %x\n\rAccel Y data: %x\n\rAccel Z data: %x\n\rMag X data: %x\n\rMag Y data: %x\n\rMag Z data: %x\n\n\r",
+		   LSM_data.acc_x, LSM_data.acc_y, LSM_data.acc_z,
+		   LSM_data.mag_x, LSM_data.mag_y, LSM_data.mag_z);
 }

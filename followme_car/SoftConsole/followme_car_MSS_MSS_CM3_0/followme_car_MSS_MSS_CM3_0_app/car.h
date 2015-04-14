@@ -1,7 +1,5 @@
-#ifndef CAR_H_
-#define CAR_H_
-
 #include <inttypes.h>
+#include <stddef.h>
 #include "bool.h"
 
 /**
@@ -59,4 +57,5 @@ void turnCarLeft(int speed);
  */
 void moveCar(bool leftFwd, bool rightFwd, int leftSpeed, int rightSpeed);
 
-#endif /* CAR_H_ */
+void get_LSM_data(uint8_t *rx_buffer, size_t buf_size);
+

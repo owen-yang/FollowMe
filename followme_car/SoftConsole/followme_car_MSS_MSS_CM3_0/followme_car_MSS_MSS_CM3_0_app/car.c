@@ -1,12 +1,20 @@
 #include "car.h"
+#include "drivers/CoreUARTapb/core_uart_apb.h"
 
 #define MOTOR_CONTROLLER_ADDR 0x40050000
+#define COREUARTAPB0_BASE_ADDR 0xC3000000UL
+
+#define BAUD_VALUE_9600    155
 
 static const int DUTY_RANGE = 50;
 static const int DUTY_MIN = 40;
 
+UART_instance_t g_uart;
+
 void initCar() {
 	stopCar();
+	UART_init(&g_uart, COREUARTAPB0_BASE_ADDR,
+	          BAUD_VALUE_9600, (DATA_8_BITS | EVEN_PARITY));
 }
 
 void stopCar() {
@@ -58,4 +66,8 @@ void moveCar(bool leftFwd, bool rightFwd, int leftSpeed, int rightSpeed) {
 	data ^= leftDuty << 9;
 
 	*addr = data;
+}
+
+void get_LSM_data(uint8_t *rx_buffer, size_t buff_size) {
+	UART_get_rx(&g_uart, rx_buffer, buff_size);
 }
