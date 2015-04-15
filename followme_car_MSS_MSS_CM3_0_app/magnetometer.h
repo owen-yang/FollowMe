@@ -17,6 +17,7 @@ extern LSM_data_struct LSM_data;
 
 void write8(const uint8_t reg, uint8_t value);
 void read_reg(const uint8_t reg, uint8_t *buf, size_t size);
+void enable_LSM();
 void read_LSM();
 void send_over_XBee();
 void print_data();
