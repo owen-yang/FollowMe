@@ -1,2 +1,0 @@
-@E: CL172 :"C:\Users\owenyang\Desktop\FollowMe\followme_car\hdl\MOTOR_CONTROLLER.v":32:10:32:25|Only one always block can assign a given variable RIGHT_DUTY_CYCLE[6:0]
-
