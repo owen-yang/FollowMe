@@ -5,21 +5,25 @@
 #define ACCEL_TARGET_ADDRESS 	(0x32 >> 1u)	// 0011001x
 #define MAGNET_TARGET_ADDRESS 	(0x3C >> 1u)	// 0011110x
 
+#define STATUS_REG_A 0x27
+#define SR_REG_M 0x09
+
 #define LSM_DATA_TOTAL_SIZE	12
 
 typedef struct LSM_data_struct
 {
-	uint16_t mag_x, mag_y, mag_z;
 	uint16_t acc_x, acc_y, acc_z;
+	uint16_t mag_x, mag_y, mag_z;
 } LSM_data_struct;
 
 extern LSM_data_struct LSM_data;
+extern int connection_OK;
 
 void write8(const uint8_t reg, uint8_t value);
 void read_reg(const uint8_t reg, uint8_t *buf, size_t size);
 void enable_LSM();
+void wait_for_OK();
+void check_status();
 void read_LSM();
 void send_over_XBee();
 void print_data();
-
-float magToDegrees(int16_t mag_x, int16_t mag_y);
