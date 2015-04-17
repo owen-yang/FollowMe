@@ -1,28 +1,9 @@
 #include "magnetometer.h"
 
 #include <stdio.h>
-#include <string.h>
+#include <math.h>
 
 LSM_data_struct LSM_data;
-
-int connection_OK = 0;
-
-char g_rx_buff[20];
-uint8_t g_rx_buff_size = 0;
-
-void uart1_rx_handler( mss_uart_instance_t * this_uart )
-{
-	char buff[20];
-	uint8_t size = MSS_UART_get_rx( this_uart, buff, sizeof(buff));
-
-	int i;
-	for (i = 0; i < size; ++i) {
-		g_rx_buff[g_rx_buff_size++] = buff[i];
-	}
-
-	g_rx_buff[g_rx_buff_size] = '\0';
-	connection_OK = !strcmp(g_rx_buff, "POOPLORD420");
-}
 
 void write8(const uint8_t reg, uint8_t value)
 {
@@ -73,44 +54,24 @@ void enable_LSM()
 	MSS_I2C_init
 	(
 		&g_mss_i2c1,
-		MAGNET_TARGET_ADDRESS,
+		0x10u,
 		MSS_I2C_PCLK_DIV_256
 	);
 
-	MSS_UART_init
-	(
-	    &g_mss_uart1,
-	    MSS_UART_9600_BAUD,
-	    MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT
-	);
-
-	MSS_UART_set_rx_handler(&g_mss_uart1, uart1_rx_handler, MSS_UART_FIFO_SINGLE_BYTE );
+//	MSS_UART_init
+//	(
+//	    &g_mss_uart1,
+//	    MSS_UART_9600_BAUD,
+//	    MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT
+//	);
 
 	// enable accelerometer
-	// write8(0x24, 0x00);
 	write8(0x20, 0x57);
-	write8(0x21, 0x80);
 
 	// enable magnetometer
 	write8(0x00, 0x10);
 	write8(0x01, 0x20);
 	write8(0x02, 0x00);
-}
-
-void check_status()
-{
-	uint8_t waiting = 1, acc_ready = 0, mag_ready = 0;
-	uint8_t buf[] = {0};
-	while (waiting)
-	{
-		read_reg(STATUS_REG_A, buf, sizeof(buf));
-		acc_ready = buf[0] & 0x80;
-
-		read_reg(SR_REG_M, buf, sizeof(buf));
-		mag_ready = buf[0] & 0x01;
-
-		waiting = !acc_ready || !mag_ready;
-	}
 }
 
 void read_LSM()
@@ -128,9 +89,9 @@ void read_LSM()
 
 	read_reg(desired_reg, buf, sizeof(buf));
 	// lower bytes are first, x y z
-	LSM_data.acc_x = (int16_t)(buf[0] | ((int16_t)buf[1] << 8u));
-	LSM_data.acc_y = (int16_t)(buf[2] | ((int16_t)buf[3] << 8u));
-	LSM_data.acc_z = (int16_t)(buf[4] | ((int16_t)buf[5] << 8u));
+	LSM_data.acc_x = (int16_t)(buf[0] | ((int16_t)buf[1] << 8));
+	LSM_data.acc_y = (int16_t)(buf[2] | ((int16_t)buf[3] << 8));
+	LSM_data.acc_z = (int16_t)(buf[4] | ((int16_t)buf[5] << 8));
 
 }
 
@@ -141,9 +102,9 @@ void send_over_XBee()
 	char buff[PACKET_SIZE];
 	int buffSize = 0;
 
-//	buffSize += sprintf(&buff[buffSize], "%d ", LSM_data.acc_x);
-//	buffSize += sprintf(&buff[buffSize], "%d ", LSM_data.acc_y);
-//	buffSize += sprintf(&buff[buffSize], "%d ", LSM_data.acc_z);
+	buffSize += sprintf(&buff[buffSize], "%d ", LSM_data.acc_x);
+	buffSize += sprintf(&buff[buffSize], "%d ", LSM_data.acc_y);
+	buffSize += sprintf(&buff[buffSize], "%d ", LSM_data.acc_z);
 	buffSize += sprintf(&buff[buffSize], "%d ", LSM_data.mag_x);
 	buffSize += sprintf(&buff[buffSize], "%d ", LSM_data.mag_y);
 	buffSize += sprintf(&buff[buffSize], "%d ", LSM_data.mag_z);
@@ -158,15 +119,10 @@ void send_over_XBee()
 //					     LSM_data.mag_y >> 8u, LSM_data.mag_y,
 //					     LSM_data.mag_z >> 8u, LSM_data.mag_z };
 	/* transmit the data */
-//	MSS_UART_polled_tx
-//	(
-//		&g_mss_uart1,
-//		buff, buffSize
-//	);
-	MSS_UART_polled_tx_string
+	MSS_UART_polled_tx
 	(
-	    &g_mss_uart1,
-	    buff
+		&g_mss_uart1,
+		buff, buffSize
 	);
 }
 
@@ -177,3 +133,14 @@ void print_data()
 		   LSM_data.mag_x, LSM_data.mag_y, LSM_data.mag_z);
 }
 
+float magToDegrees(int16_t mag_x, int16_t mag_y) {
+	if (mag_y > 0) {
+		return 90 - atan((float)mag_x / mag_y) * 180 / M_PI;
+	} else if (mag_y < 0) {
+		return 270 - atan((float)mag_x / mag_y) * 180 / M_PI;
+	} else if (mag_x > 0) {
+		return 0;
+	} else {
+		return 180;
+	}
+}
