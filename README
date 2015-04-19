@@ -12,39 +12,39 @@ Bits		Purpose
 0 	 	RIGHT FWD/~REV
 1 		LEFT FWD/~REV
 2-8	 	RIGHT DUTY CYCLE
-9-15	 	LEFT DUTY CYCLE
+9-15	LEFT DUTY CYCLE
 --------------------------------
 
 
 WIRE CONNECTIONS:
--------------------------------------------
-DEVICE		PIN	DEVICE		PIN
--------------------------------------------
-SF-Expansion	F0	H-Bridge	IN2
-SF-Expansion	F1	H-Bridge	IN1
-SF-Expansion	F2	H-Bridge	IN3
-SF-Expansion	F3	H-Bridge	IN4
--------------------------------------------
+-----------------------------------------------------------
+DEVICE		    PIN                             DEVICE		PIN
+-----------------------------------------------------------
+SF      	    H20 (1st jumper below JP7)	    H-Bridge	IN2
+SF          	C21 (2nd jumper below JP7)      H-Bridge	IN1
+SF          	J22 (4th GPIO)               	  H-Bridge	IN3
+SF          	K19 (5th GPIO)                  H-Bridge	IN4
+-----------------------------------------------------------
 
 
 H-BRIDGE INFO:
 -------------------------------
-PWM Frequency		= 100Hz
+PWM Frequency		    = 100Hz
 Minimum Duty Cycle	= 40%
 Maximum Duty Cycle	= 90%
 
 OUT1 	= 1-CAR
-VS	= BATTERY POS
-ENA	= 5V
-GND	= GND
-CSA	= GND
+VS	  = BATTERY POS
+ENA	  = 5V
+GND	  = GND
+CSA	  = GND
 OUT2	= 2-CAR
-IN1	= F1-BREAKOUT
-IN2	= F0-BREAKOUT
-VLS	= 5V
-ENB	= 5V
+IN1	  = F1-BREAKOUT
+IN2	  = F0-BREAKOUT
+VLS	  = 5V
+ENB	  = 5V
 OUT3	= 3-CAR
-CSB	= GND
+CSB	  = GND
 IN3	= F2-BREAKOUT
 IN4	= F3-BREAKOUT
 OUT4	= 4-CAR
